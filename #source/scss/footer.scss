@@ -1,0 +1,148 @@
+.footer {
+	padding-top: 100px;
+	&__flexbox {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__logo {
+		flex:0 0 260px;
+	}
+	&__logoicon {
+		margin-bottom: 20px;
+	}
+	&__logoText {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 24px;
+		color: rgba(31, 32, 65, 0.75);
+	}
+	&__navigation {
+		flex:0 0 143px;
+	}
+	&__navigationTitle {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 15px;
+		text-transform: uppercase;
+		color: #1F2041;
+		margin-bottom: 21px;
+	}
+	&__navigationPoints {}
+	&__about {
+		flex:0 0 109px;
+	}
+	&__aboutTitle {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 15px;
+		text-transform: uppercase;
+		color: #1F2041;
+		margin-bottom: 21px;
+	}
+	&__aboutPoints {}
+	&__support {
+		flex:0 0 149px;
+	}
+	&__supportTitle {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 15px;
+		text-transform: uppercase;
+		color: #1F2041;
+		margin-bottom: 21px;
+	}
+	&__supportPoints {}
+	&__subscription {
+		flex:0 0 260px;
+	}
+	&__subscriptionTitle {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 15px;
+		text-transform: uppercase;
+		color: #1F2041;
+		margin-bottom: 21px;
+	}
+	&__subscriptionPoints {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 24px;
+		color: rgba(31, 32, 65, 0.75);
+		margin-bottom: 20px;
+	}
+	&__subscriptionEmail {
+		border: 2px solid rgba(31, 32, 65, 0.25);
+		box-sizing: border-box;
+		border-radius: 4px;
+		form{
+			display: flex;
+			justify-content: space-between;
+			font-family: Montserrat;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 24px;
+			color: rgba(31, 32, 65, 0.25);
+			padding: 0px 10px;
+		}
+	}
+}
+
+.PointsClass {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	margin-bottom: 20px;
+	a{
+		color: rgba(31, 32, 65, 0.5);
+	}
+}
+.button__arrow {
+	margin-top: 5px;
+}
+
+.footer {
+	&__flexbox {}
+	&__rights {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 17px;
+		color: rgba(31, 32, 65, 0.75);
+	}
+	&__icon {
+		a{
+			margin-left: 20px;
+			font-size: 24px;
+			font-family: Font Awesome 5 Brands;
+			color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+		}
+	}
+}
+
+.social__icon {
+	 background: -webkit-gradient(linear, left top, left bottom, from(#8BA4F9), to(#BC9CFF));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	display: initial;
+}
+.footer__endblock{
+	border-top: 1px #E5E5E5 solid;
+	margin-top: 100px;
+}
+

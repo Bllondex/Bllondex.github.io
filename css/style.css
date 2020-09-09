@@ -1,0 +1,267 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.header {
+  height: 70px;
+  widows: 100%;
+}
+.header__flexbox {
+  display: flex;
+  justify-content: space-between;
+}
+.header__menu {
+  margin: auto 0;
+}
+.header__menubox {
+  display: flex;
+}
+.wrapper {
+  padding: 15px 140px;
+}
+
+.menu__batton {
+  margin-right: 20px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.batton__register {
+  padding: 12px 20px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.batton__comein {
+  padding: 10px 20px;
+  border: 2px #BC9CFF solid;
+  border-radius: 22px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #BC9CFF;
+}
+
+.footer {
+  padding-top: 100px;
+}
+.footer__flexbox {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__logo {
+  flex: 0 0 260px;
+}
+.footer__logoicon {
+  margin-bottom: 20px;
+}
+.footer__logoText {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+.footer__navigation {
+  flex: 0 0 143px;
+}
+.footer__navigationTitle {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+  margin-bottom: 21px;
+}
+.footer__about {
+  flex: 0 0 109px;
+}
+.footer__aboutTitle {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+  margin-bottom: 21px;
+}
+.footer__support {
+  flex: 0 0 149px;
+}
+.footer__supportTitle {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+  margin-bottom: 21px;
+}
+.footer__subscription {
+  flex: 0 0 260px;
+}
+.footer__subscriptionTitle {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+  margin-bottom: 21px;
+}
+.footer__subscriptionPoints {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  margin-bottom: 20px;
+}
+.footer__subscriptionEmail {
+  border: 2px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.footer__subscriptionEmail form {
+  display: flex;
+  justify-content: space-between;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.25);
+  padding: 0px 10px;
+}
+
+.PointsClass {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 20px;
+}
+.PointsClass a {
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.button__arrow {
+  margin-top: 5px;
+}
+
+.footer__rights {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.75);
+}
+.footer__icon a {
+  margin-left: 20px;
+  font-size: 24px;
+  font-family: Font Awesome 5 Brands;
+  color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+
+.social__icon {
+  background: -webkit-gradient(linear, left top, left bottom, from(#8BA4F9), to(#BC9CFF));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: initial;
+}
+
+.footer__endblock {
+  border-top: 1px #E5E5E5 solid;
+  margin-top: 100px;
+}
