@@ -13,6 +13,10 @@
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="fonts\font-awesome-4.7.0\css\font-awesome.min.css">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<script src="js/jquery.js"></script>
+		<script src="js/datepickerOne.js"></script>
+		<script src="js/SearchRoomscript.js"></script>
+		<script src="js/popap_guest.js"></script>
 	</head>
 	<!-- Отображаемое тело страницы -->
 	<body>
@@ -36,7 +40,57 @@
 	</div>
 </div>
 		<!--Контент-->
-		
+		<div class="searchroomP">
+			<div class="wrapper">
+				<div class="searchroomP__flexbox">
+					<div class="searchroomP__sidebar">
+						<div class="searchroomP__datevar">
+						ДАТЫ ПРЕБЫВАНИЯ В ОТЕЛЕ
+						<input type="text" class="picker"/>
+						</div>
+						<div class="searchroomP__guestvar">
+							Гости
+							<div class="guest">
+								<span>Сколько гостей</span>
+								<i class="fa fa-chevron-down" aria-hidden="true"></i>
+							</div>
+							<div class="guest_varible_popap popap">
+								<div class="guest__itemvariablebox">
+									<div class="guest__variableItem">Взрослые</div>
+									<div class="guest__variableItem">
+										<button class = "button_numberguests button__minus_abults">-</button>
+										<span class="result_abults">0</span>
+										<button class = "button_numberguests button__plus_abults">+</button>
+									</div>
+								</div>
+								<div class="guest__itemvariablebox">
+									<div class="guest__variableItem">Дети</div>
+									<div class="guest__variableItem">
+										<button class = "button_numberguests button__minus_child">-</button>
+										<span class="result_child">0</span>
+										<button class = "button_numberguests button__plus_child">+</button>
+									</div>
+								</div>
+								<div class="guest__itemvariablebox">
+									<div class="guest__variableItem">Младенцы</div>
+									<div class="guest__variableItem">
+										<button class = "button_numberguests button__minus_baby">-</button>
+										<span class="result_baby">0</span>
+										<button class = "button_numberguests button__plus_baby">+</button>
+									</div>
+								</div>
+								<div class="popap__footer">
+									<button class="popap__buttonClear Button_Clear">Очистить</button>
+									<button class="popap__buttonApply Button_Aply">Применить</button>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<div class="searcroom__handpickedNumbers"></div>
+				</div>
+			</div>
+		</div>
 
 
 <div class="footer">

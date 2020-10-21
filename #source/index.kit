@@ -5,7 +5,7 @@
 	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
 	<head>
 		<!-- Заголовок страницы в браузере -->
-		<title>Проект №1</title>
+		<title>Toxin</title>
 		<!-- Подключаем CSS -->
 		<link rel="stylesheet" href="css/style.css" />
 		<!-- Кодировка страницы -->
@@ -13,15 +13,87 @@
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="fonts\font-awesome-4.7.0\css\font-awesome.min.css">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<script src="js/jquery.js"></script>
+		<script src="js/datepicker.js"></script>
+		<script src="js/popap_guest.js"></script>
 	</head>
 	<!-- Отображаемое тело страницы -->
 	<body>
 		
 		<!--@import "header.html"-->
+
 		<!--Контент-->
-		
+		<div class="startPage">
+			<div class="wrapper">
+				<div class="startPage_searchroom searchroom">
+					<div class="searchroom__title">Найдём номера под ваши пожелания</div>
+					<form action="#">
+					<div class="serchroom__dateflexbox">
+						<div class="serchroom__dateflexitem">
+							Прибытие <br>
+							<input placeholder="ДД.ММ.ГГГГ" class="date-pickerinp date-picker-start" />
+							<i class="fa fa-chevron-down" aria-hidden="true"></i>
+						</div>
+						<div class="serchroom__dateflexitem">
+							Выезд <br>
+							<input placeholder="ДД.ММ.ГГГГ" class="date-pickerinp date-picker-end" />
+							<i class="fa fa-chevron-down" aria-hidden="true"></i>
+						</div>
+						<div class="date-picker">
+						</div>
+					</div>
+					<div class="searchroom__guest">
+						Гости<br>
+						<div class="guest">
+							<span>Сколько гостей</span>
+							<i class="fa fa-chevron-down" aria-hidden="true"></i>
+						</div>
+
+						<div class="guest_varible_popap popap">
+							<div class="guest__itemvariablebox">
+								<div class="guest__variableItem">Взрослые</div>
+								<div class="guest__variableItem">
+									<button class = "button_numberguests button__minus_abults">-</button>
+									<span class="result_abults">0</span>
+									<button class = "button_numberguests button__plus_abults">+</button>
+								</div>
+							</div>
+							<div class="guest__itemvariablebox">
+								<div class="guest__variableItem">Дети</div>
+								<div class="guest__variableItem">
+									<button class = "button_numberguests button__minus_child">-</button>
+									<span class="result_child">0</span>
+									<button class = "button_numberguests button__plus_child">+</button>
+								</div>
+							</div>
+							<div class="guest__itemvariablebox">
+								<div class="guest__variableItem">Младенцы</div>
+								<div class="guest__variableItem">
+									<button class = "button_numberguests button__minus_baby">-</button>
+									<span class="result_baby">0</span>
+									<button class = "button_numberguests button__plus_baby">+</button>
+								</div>
+							</div>
+							<div class="popap__footer">
+								<button class="popap__buttonClear Button_Clear">Очистить</button>
+								<button class="popap__buttonApply Button_Aply">Применить</button>
+							</div>
+						</div>
+					</div>
+					<a href="search_room.html" class="serchroom__buttonSerchNumber">Подобрать номер <span class="material-icons">arrow_forward</span> </a>
+					</form>
+				</div>
+				<div class="startPage__comment">Лучшие номера для вашей работы,<br>отдыха и просто вдохновения</div>
+			</div>
+		</div>
+
+
+
+
+		<!--/Контент-->
 
 
 		<!--@import "footer.html"-->
+
 	</body>
 </html>

@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /*Обнуление*/
+@import '../css/datepicker.css';
 * {
   padding: 0;
   margin: 0;
@@ -264,4 +265,1101 @@ h1, h2, h3, h4, h5, h6 {
 .footer__endblock {
   border-top: 1px #E5E5E5 solid;
   margin-top: 100px;
+}
+
+.button__apply {
+  background-color: #fff;
+  flex: 1;
+  cursor: pointer;
+  border-radius: 4px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #BC9CFF;
+}
+
+.button__apply:hover {
+  color: #4a4a4a;
+  background: #f0f0f0;
+}
+
+.guest i {
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.standForm {
+  width: 320px;
+  height: 67px;
+}
+.standForm__heading {
+  width: inherit;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.standForm__heading span:last-child {
+  color: rgba(31, 32, 65, 0.5);
+  font-weight: normal;
+}
+.standForm__Form input, .standForm__Form div {
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 320px;
+  height: 44px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  padding: 13px 15px;
+}
+.standForm__Form input::-webkit-input-placeholder, .standForm__Form div::-webkit-input-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+.standForm__Form input:-moz-placeholder, .standForm__Form div:-moz-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+.standForm__Form input::-moz-placeholder, .standForm__Form div::-moz-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+.standForm__Form input:-ms-input-placeholder, .standForm__Form div:-ms-input-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+.standForm__Form input:focus, .standForm__Form input:hover, .standForm__Form div:focus, .standForm__Form div:hover {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+.standForm__Form input:focus::-webkit-input-placeholder, .standForm__Form input:hover::-webkit-input-placeholder, .standForm__Form div:focus::-webkit-input-placeholder, .standForm__Form div:hover::-webkit-input-placeholder {
+  color: rgba(31, 32, 65, 0.75);
+}
+.standForm__Form input:focus:-moz-placeholder, .standForm__Form input:hover:-moz-placeholder, .standForm__Form div:focus:-moz-placeholder, .standForm__Form div:hover:-moz-placeholder {
+  color: rgba(31, 32, 65, 0.75);
+}
+.standForm__Form input:focus::-moz-placeholder, .standForm__Form input:hover::-moz-placeholder, .standForm__Form div:focus::-moz-placeholder, .standForm__Form div:hover::-moz-placeholder {
+  color: rgba(31, 32, 65, 0.75);
+}
+.standForm__Form input:focus:-ms-input-placeholder, .standForm__Form input:hover:-ms-input-placeholder, .standForm__Form div:focus:-ms-input-placeholder, .standForm__Form div:hover:-ms-input-placeholder {
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.FormNumberGuest {
+  width: 100px;
+  height: 100px;
+}
+
+.popap_list {
+  display: none;
+}
+
+.standForm__Popap {
+  position: relative;
+}
+.standForm__Popap i {
+  position: absolute;
+  top: 15px;
+  left: 290px;
+  color: rgba(31, 32, 65, 0.25);
+}
+.standForm__Popap_min {
+  position: relative;
+}
+.standForm__Popap_min i {
+  position: absolute;
+  top: 15px;
+  left: 234px;
+  color: rgba(31, 32, 65, 0.25);
+}
+.standForm__Form {
+  position: relative;
+}
+.standForm__Form i {
+  position: absolute;
+  top: 15px;
+  left: 290px;
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.PopapForm_mathSign {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 22px;
+  background-color: #ffff;
+}
+.PopapForm_quantity {
+  margin: 16px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #1F2041;
+  position: absolute;
+  top: -9px;
+  left: 30px;
+}
+.PopapForm__inputForm {
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: inherit;
+  height: 44px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.75);
+  padding: 13px 15px;
+  word-spacing: pre;
+}
+.PopapForm__popapGuest {
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 7px;
+  position: relative;
+}
+.PopapForm__popapGuest div {
+  position: relative;
+}
+.PopapForm__popapGuest button:last-child {
+  margin-left: 32px;
+}
+.PopapForm__name {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #1F2041;
+  width: 133px;
+  word-spacing: nowrap;
+}
+.PopapForm__popapBox {
+  position: absolute;
+  top: 42px;
+  left: 0;
+  background-color: white;
+  width: 320px;
+  height: 159px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  border-radius: 0px 0px 4px 4px;
+  padding: 7px 7px 7px 14px;
+  display: none;
+  z-index: 1000;
+}
+.PopapForm__popapBox_min {
+  position: absolute;
+  top: 42px;
+  left: 0;
+  background-color: white;
+  width: 266px;
+  height: 159px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  border-radius: 0px 0px 4px 4px;
+  padding: 7px 7px 7px 14px;
+  display: none;
+  z-index: 1000;
+}
+.PopapForm__footer {
+  display: flex;
+  justify-content: space-between;
+}
+.PopapForm__batton {
+  display: inline-block;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #BC9CFF;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 10px;
+}
+.PopapForm__batton:hover {
+  text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.5);
+}
+.PopapForm__batton_clear {
+  visibility: hidden;
+}
+
+.standForm_min {
+  width: 266px;
+  height: 67px;
+}
+.standForm_min__Popap {
+  position: relative;
+}
+.standForm_min__Popap i {
+  position: absolute;
+  top: 15px;
+  left: 290px;
+  color: rgba(31, 32, 65, 0.25);
+}
+.standForm_min__heading {
+  width: inherit;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.standForm_min__heading span:last-child {
+  color: rgba(31, 32, 65, 0.5);
+  font-weight: normal;
+}
+.standForm_min__Form {
+  position: relative;
+}
+.standForm_min__Form i {
+  position: absolute;
+  top: 15px;
+  left: 234px;
+  color: rgba(31, 32, 65, 0.25);
+}
+.standForm_min__Form a {
+  position: absolute;
+  top: 6px;
+  left: 230px;
+  font-size: 24px;
+  font-family: Font Awesome 5 Brands;
+}
+.standForm_min__Form a span {
+  color: #af8aff;
+}
+.standForm_min__Form input, .standForm_min__Form div {
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 266px;
+  height: 44px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  padding: 13px 15px;
+}
+.standForm_min__Form input::-webkit-input-placeholder, .standForm_min__Form div::-webkit-input-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+.standForm_min__Form input:-moz-placeholder, .standForm_min__Form div:-moz-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+.standForm_min__Form input::-moz-placeholder, .standForm_min__Form div::-moz-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+.standForm_min__Form input:-ms-input-placeholder, .standForm_min__Form div:-ms-input-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+.standForm_min__Form input:focus, .standForm_min__Form input:hover, .standForm_min__Form div:focus, .standForm_min__Form div:hover {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+.standForm_min__Form input:focus::-webkit-input-placeholder, .standForm_min__Form input:hover::-webkit-input-placeholder, .standForm_min__Form div:focus::-webkit-input-placeholder, .standForm_min__Form div:hover::-webkit-input-placeholder {
+  color: rgba(31, 32, 65, 0.75);
+}
+.standForm_min__Form input:focus:-moz-placeholder, .standForm_min__Form input:hover:-moz-placeholder, .standForm_min__Form div:focus:-moz-placeholder, .standForm_min__Form div:hover:-moz-placeholder {
+  color: rgba(31, 32, 65, 0.75);
+}
+.standForm_min__Form input:focus::-moz-placeholder, .standForm_min__Form input:hover::-moz-placeholder, .standForm_min__Form div:focus::-moz-placeholder, .standForm_min__Form div:hover::-moz-placeholder {
+  color: rgba(31, 32, 65, 0.75);
+}
+.standForm_min__Form input:focus:-ms-input-placeholder, .standForm_min__Form input:hover:-ms-input-placeholder, .standForm_min__Form div:focus:-ms-input-placeholder, .standForm_min__Form div:hover:-ms-input-placeholder {
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.manyRooms__fullvar {
+  display: none;
+}
+
+.manyRooms__fullvar1,
+.manyRooms__fullvar2,
+.manyRooms__fullvar3 {
+  margin-right: 5px;
+}
+
+.CheckBoxform__Name {
+  position: relative;
+  z-index: 5;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+  width: 266px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.CheckBoxform__Name span {
+  margin-right: 15px;
+}
+.CheckBoxform__ChekList {
+  z-index: 1;
+  transform: translateY(-20%);
+  opacity: 0;
+  transform-origin: top;
+  transition: 0.5s;
+  position: absolute;
+}
+.CheckBoxform__ChekItem {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+  margin-bottom: 8px;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+label {
+  padding-left: 20px;
+  display: flex;
+}
+
+.CheckBoxform__ChekItem label:before {
+  content: "";
+  display: inline-block;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 20px;
+  height: 20px;
+  vertical-align: center;
+  margin-left: -20px;
+  margin-right: 10px;
+}
+
+.radio:before {
+  content: "";
+  display: inline-block;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  vertical-align: center;
+  margin-left: -20px;
+  margin-right: 10px;
+}
+
+.checkboxSwitch_label:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  transition: all 0.4s ease;
+  top: 4px;
+  left: 24px;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: rgba(31, 32, 65, 0.25);
+  border: none;
+  border-radius: 10px;
+  vertical-align: center;
+  margin-left: -20px;
+  margin-right: 10px;
+}
+
+.checkboxSwitch_label:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 40px;
+  height: 20px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.checkboxSwitch {
+  margin-top: 15px;
+}
+
+.checkboxSwitch_label {
+  position: relative;
+  width: 260px;
+  transition: all 0.4s ease;
+}
+.checkboxSwitch_label span {
+  padding-left: 30px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.radio {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+input[type=checkbox]:checked + label:before {
+  content: "";
+  background-image: url(../img/vector.svg);
+  background-repeat: no-repeat;
+  background-position: 0px 1.5px;
+  border: 1px solid #BC9CFF;
+  background-size: 20px 12px;
+}
+
+input[name=sex]:checked + label:before {
+  content: "";
+  background-image: url(../img/Rectangle.svg);
+  background-repeat: no-repeat;
+  background-position: -0.5px 2.9px;
+  border: 1px solid #BC9CFF;
+  background-size: 20px 12px;
+}
+
+input[name=sex]:checked + label {
+  color: rgba(31, 32, 65, 0.75);
+}
+
+input[class=switch]:checked + label:before {
+  left: 42px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  background-repeat: repeat;
+  background-position: center;
+  border: none;
+  background-size: 100%;
+}
+
+input[class=switch]:checked + .checkboxSwitch_label:after {
+  border: 1px solid #BC9CFF;
+}
+
+.CheckBoxform__Name span {
+  transition: 1s;
+}
+
+.CheckBoxform__Name_active span {
+  transform: rotate(180deg);
+}
+
+.CheckBoxform__ChekList_active {
+  transform: translateY(0%);
+  opacity: 1;
+  position: relative;
+}
+
+.IntelligenceForm {
+  width: 280px;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  padding: 20px 0px;
+  border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+}
+.IntelligenceForm__img {
+  margin-right: 10px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+.IntelligenceForm__img span {
+  font-size: 48px;
+  width: 48px;
+  height: 49px;
+  mix-blend-mode: screen;
+  background: white;
+}
+.IntelligenceForm__text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+.IntelligenceForm__name {
+  font-weight: bold;
+}
+.CheckBoxform__ChekList_open {
+  transform: translateY(0%);
+  opacity: 1;
+  position: relative;
+  width: 222px;
+}
+
+.CheckBoxForm__title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+  margin-bottom: 16.5px;
+}
+
+.RadioBatt {
+  display: flex;
+  justify-content: space-between;
+  width: 220.74px;
+  height: 55px;
+}
+
+.likeButton {
+  width: 40px;
+  height: 20px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 10px;
+  position: relative;
+}
+.likeButton span:first-child {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  color: rgba(31, 32, 65, 0.25);
+}
+.likeButton span:last-child {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 20px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.likeButton__active {
+  width: 40px;
+  height: 20px;
+  background: #FFFFFF;
+  border: 1px solid #B29DFD;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #BC9CFF;
+  position: relative;
+}
+.likeButton__active span:first-child {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  color: #BC9CFF;
+}
+.likeButton__active span:last-child {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 20px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  color: #BC9CFF;
+}
+
+.star-rating {
+  border: solid 1px #ccc;
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 1.5em;
+  justify-content: space-around;
+  padding: 0 0.2em;
+  text-align: center;
+  width: 5em;
+}
+
+.star-rating input {
+  display: none;
+}
+
+.star-rating label {
+  padding-left: 0px;
+}
+
+.star-rating label:before {
+  content: "☆";
+  color: #BC9CFF;
+  cursor: pointer;
+}
+
+.star-rating :checked ~ label:before {
+  content: "★";
+  color: #BC9CFF;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color: #BC9CFF;
+}
+
+.date-picker {
+  visibility: hidden;
+  position: absolute;
+  z-index: 100;
+  background-color: #fff;
+  top: 64px;
+  left: 0;
+}
+.calendar {
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  width: 320px;
+}
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.calendar-header-content {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  text-align: center;
+  color: #1F2041;
+}
+.calendar-header-back {
+  margin-left: 20px;
+}
+.calendar-header-fwd {
+  margin-right: 20px;
+}
+.calendar-content {
+  margin: 10px;
+}
+.calendar-content-header {
+  display: flex;
+  justify-content: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  align-items: center;
+  text-align: center;
+  color: #BC9CFF;
+}
+.calendar-content-header-days-of-week {
+  min-width: 40px;
+  text-align: center;
+}
+.calendar-content-dates {
+  margin-top: 10px;
+}
+.calendar-content-week {
+  display: flex;
+  justify-content: center;
+}
+.calendar-content-day {
+  cursor: pointer;
+  min-height: 40px;
+  min-width: 40px;
+  text-align: center;
+  display: inline;
+  line-height: 40px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  align-items: center;
+  color: rgba(31, 32, 65, 0.5);
+}
+.calendar-content-day__current {
+  color: white;
+  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+  border-radius: 50%;
+}
+.calendar-content-day__another {
+  color: rgba(31, 32, 65, 0.25);
+}
+.calendar-content-day__selected {
+  color: #fff;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  border-radius: 50%;
+}
+.calendar-content-day__between {
+  position: relative;
+}
+.calendar-content-day__between:before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  opacity: 0.25;
+}
+.calendar-content-day__start {
+  position: relative;
+}
+.calendar-content-day__start:before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  opacity: 0.25;
+  width: 50%;
+}
+.calendar-content-day__end {
+  position: relative;
+}
+.calendar-content-day__end:before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: transparent;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  opacity: 0.25;
+  width: 50%;
+}
+
+.calendar-header-back {
+  background-color: #fff;
+}
+
+.calendar-header-fwd {
+  background-color: #fff;
+}
+
+.calendar-content-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.calendar-content-footer-clear {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: rgba(31, 32, 65, 0.5);
+  background-color: #fff;
+  margin: 20px 0px 10px 10px;
+}
+
+.calendar-content-footer-apply {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #BC9CFF;
+  margin: 20px 10px 10px 0px;
+  background-color: #fff;
+}
+
+.guest {
+  display: inline-block;
+}
+
+.button_numberguests {
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  align-items: center;
+  text-align: center;
+  color: rgba(31, 32, 65, 0.5);
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 22px;
+  margin: 0px 5px 0px 5px;
+}
+
+.guest__itemvariablebox {
+  display: flex;
+  justify-content: space-between;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+  align-items: center;
+  margin-bottom: 7px;
+}
+
+.guest_varible_popap {
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  width: 320px;
+  padding: 7px 7px 13px 14px;
+  display: none;
+}
+
+.guest {
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  box-sizing: border-box;
+  border-radius: 2px;
+  width: 320px;
+  height: 44px;
+  padding: 0px 7px 0px 14px;
+  display: flex;
+  align-items: center;
+}
+
+.popap {
+  position: absolute;
+  z-index: 999;
+}
+.popap__footer {
+  display: flex;
+  justify-content: space-between;
+}
+.popap__buttonClear {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: rgba(31, 32, 65, 0.5);
+  background-color: #fff;
+  margin: 20px 0px 0px 10px;
+}
+.popap__buttonApply {
+  margin-right: 6px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #BC9CFF;
+  margin: 20px 10px 0px 0px;
+  background-color: #fff;
+}
+
+.startPage {
+  height: 100%;
+  background-image: url(../img/background.png);
+  padding-top: 70px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.startPage_searchroom {
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  width: 380px;
+  height: 374px;
+  padding: 40px 30px 30px 30px;
+  position: relative;
+}
+.startPage__comment {
+  padding-top: 270px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: right;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.wrapper {
+  position: relative;
+}
+
+.searchroom__title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1F2041;
+  margin-bottom: 20px;
+}
+.searchroom__guest {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+  position: relative;
+  margin-bottom: 31px;
+}
+.searchroom__guest i {
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.serchroom__dateflexbox {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20.56px;
+  position: relative;
+}
+.serchroom__dateflexitem {
+  position: relative;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+}
+.serchroom__dateflexitem i {
+  position: absolute;
+  top: 35px;
+  right: 10px;
+  color: rgba(31, 32, 65, 0.5);
+}
+.serchroom__buttonSerchNumber {
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+  width: 320px;
+  height: 44px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 5%;
+}
+.serchroom__buttonSerchNumber:hover {
+  box-shadow: 0px 6px 5px 2px rgba(0, 0, 0, 0.3);
+}
+.serchroom__buttonSerchNumber span {
+  font-size: 24px;
+  color: #FFFFFF;
+  position: absolute;
+  top: 10px;
+  left: 282px;
+  font-weight: 200px;
+}
+
+.date-pickerinp {
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.75);
+  width: 150px;
+  height: 44px;
+  margin-top: 5.44px;
+  padding-left: 15px;
+}
+
+.guest {
+  position: relative;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: none;
+  color: rgba(31, 32, 65, 0.75);
+  margin-top: 5px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
 }

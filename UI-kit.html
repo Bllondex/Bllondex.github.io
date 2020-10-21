@@ -1,0 +1,300 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>
+		<!-- Заголовок страницы в браузере -->
+		<title>Toxin</title>
+		<!-- Подключаем CSS -->
+		<link rel="stylesheet" href="css/style.css" />
+		<!-- Кодировка страницы -->
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="fonts\font-awesome-4.7.0\css\font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<script src="js/jquery.js"></script>
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+		<!-- Классическая форма поля ввода -->
+
+		<div class="EmailForm standForm">
+			<div class="EmailForm__name standForm__heading"><span>TEXT FIELD</span> <span>default</span></div>
+			<div class="EmailForm__input standForm__Form">
+				<input type="email" name="email" id="email" placeholder="Email">
+			</div>
+		</div>
+
+		<!-- Форма ввода для выбора количества гостей -->
+		
+		<div class="Popap standForm">
+			<div class="standForm__heading"><span>Сколько гостей</span> <span>default</span></div>
+			<div class="standForm__Popap">
+				<div class="manyGuests PopapForm__inputForm">
+					Сколько гостей 
+				</div>
+				<i class="fa fa-chevron-down" aria-hidden="true"></i>
+				<div class="manyGuests__popapBox PopapForm__popapBox">
+					<div class="manyGuests__popapGuest PopapForm__popapGuest">
+						<span class="manyGuests__name PopapForm__name">Взрослые</span>
+						<div>
+							<button class="manyGuests__Adults_minus PopapForm_mathSign">-</button>
+							<span class="manyGuests__Adults_result PopapForm_quantity">0</span>
+							<button class="manyGuests__Adults_plus PopapForm_mathSign">+</button>
+						</div>
+					</div>
+					<div class="manyGuests__popapGuest PopapForm__popapGuest">
+						<span class="manyGuests__name PopapForm__name">Дети</span>
+						<div>
+							<button class="manyGuests__Children_minus PopapForm_mathSign">-</button>
+							<span class="manyGuests__Children_result PopapForm_quantity">0</span>
+							<button class="manyGuests__Children_plus PopapForm_mathSign">+</button>
+						</div>
+					</div><div class="manyGuests__popapGuest PopapForm__popapGuest">
+						<span class="manyGuests__name PopapForm__name">Младенцы</span>
+						<div>
+							<button class="manyGuests__Babies_minus PopapForm_mathSign">-</button>
+							<span class="manyGuests__Babies_result PopapForm_quantity">0</span>
+							<button class="manyGuests__Babies_plus PopapForm_mathSign">+</button>
+						</div>
+					</div>
+					<div class="PopapForm__footer">
+						<button class="manyGuests__ButtonClear PopapForm__batton PopapForm__batton_clear">Очистить</button>
+						<button class="manyGuests__ButtonAcept PopapForm__batton">Принять</button>
+					</div>
+				</div>
+			</div>
+			<script src="js/popap_F.js"></script>
+		</div>
+
+		<!-- Форма ввода для ввода даты -->
+
+		<div class=" standForm">
+			<div class=" standForm__heading"><span>masked text field</span> <span>default</span></div>
+			<div class=" standForm__Form">
+				<input type="text" id="date" placeholder="ДД/ММ/ГГГГ">
+			</div>
+			<script src="js/jquery.maskedinput.js"></script>
+		</div>
+
+		<!-- Форма ввода для ввода диапазона даты с помощью календаря -->
+
+		<div class="EmailForm standForm_min">
+			<div class="EmailForm__name standForm_min__heading"><span>TEXT FIELD</span> <span>default</span></div>
+			<div class="EmailForm__input standForm_min__Form">
+				<input type="text" class="dateRange">
+				<i class="fa fa-chevron-down" aria-hidden="true"></i>
+				<script src="js/datepickerOne.js"></script>
+			</div>
+		</div>
+
+		<!-- Уменьшенная форма ввода -->
+
+
+		<div class=" standForm_min">
+			<div class=" standForm_min__heading"><span>TEXT FIELD</span> <span>default</span></div>
+			<div class=" standForm_min__Form">
+				<input type="email" name="email" id="email" placeholder="Email">
+				<a href="#"><span class="material-icons button__arrow">arrow_forward</span></a>
+			</div>
+		</div>
+
+			<!-- Уменьшенная форма ввод кол-во комнат -->
+
+		<div class="Popap standForm_min">
+			<div class="standForm_min__heading"><span>Какие удобства</span> <span>default</span></div>
+			<div class="standForm__Popap_min">
+				<div class="manyRooms PopapForm__inputForm">
+					<span class="manyRooms__null">Какие удобства</span><span class="manyRooms__fullvar1"> </span><span class="manyRooms__fullvar2"> </span><span class="manyRooms__fullvar3"></span>
+				</div>
+				<i class="fa fa-chevron-down" aria-hidden="true"></i>
+				<div class="manyRooms__popapBox PopapForm__popapBox_min">
+					<div class="manyRooms__popapGuest PopapForm__popapGuest">
+						<span class="manyRooms__name PopapForm__name">Спальни</span>
+						<div>
+							<button class="manyRooms__Adults_minus PopapForm_mathSign">-</button>
+							<span class="manyRooms__Adults_result PopapForm_quantity">0</span>
+							<button class="manyRooms__Adults_plus PopapForm_mathSign">+</button>
+						</div>
+					</div>
+					<div class="manyRooms__popapGuest PopapForm__popapGuest">
+						<span class="manyRooms__name PopapForm__name">кровати</span>
+						<div>
+							<button class="manyRooms__Children_minus PopapForm_mathSign">-</button>
+							<span class="manyRooms__Children_result PopapForm_quantity">0</span>
+							<button class="manyRooms__Children_plus PopapForm_mathSign">+</button>
+						</div>
+					</div><div class="manyRooms__popapGuest PopapForm__popapGuest">
+						<span class="manyRooms__name PopapForm__name">Ванные комнаты</span>
+						<div>
+							<button class="manyRooms__Babies_minus PopapForm_mathSign">-</button>
+							<span class="manyRooms__Babies_result PopapForm_quantity">0</span>
+							<button class="manyRooms__Babies_plus PopapForm_mathSign">+</button>
+						</div>
+					</div>
+					<div class="PopapForm__footer">
+						<button class="manyRooms__ButtonClear PopapForm__batton PopapForm__batton_clear">Очистить</button>
+						<button class="manyRooms__ButtonAcept PopapForm__batton">Принять</button>
+					</div>
+				</div>
+			</div>
+			<script src="js/popap_F.js"></script>
+		</div>
+
+		<!-- Чекбокс лист,  расширяемый список  -->
+
+		<div class="CheckBoxform">
+			<div class="CheckBoxform__Name">
+				expandable checkbox list
+				<span class="material-icons">expand_more</span>
+			</div>
+			<div class="CheckBoxform__ChekList">
+				<div class="CheckBoxform__ChekItem">
+					<input type="checkbox" name="facilities" id="breakfast">
+					<label for="breakfast">Завтрак</label>
+				</div>
+				<div class="CheckBoxform__ChekItem">
+					<input type="checkbox" name="facilities" id="desk">
+					<label for="desk">Письменный стол</label>
+				</div>
+				<div class="CheckBoxform__ChekItem">
+					<input type="checkbox" name="facilities" id="FeedingChair">
+					<label for="FeedingChair">Стул для кормления</label>
+				</div>
+				<div class="CheckBoxform__ChekItem">
+					<input type="checkbox" name="facilities" id="Crib">
+					<label for="Crib">Кроватка</label>
+				</div>
+				<div class="CheckBoxform__ChekItem">
+					<input type="checkbox" name="facilities" id="TV">
+					<label for="TV">Телевизор</label>
+				</div>
+				<div class="CheckBoxform__ChekItem">
+					<input type="checkbox" name="facilities" id="Shampoo">
+					<label for="Shampoo">Шампунь</label>
+				</div>
+			</div>
+			<script src="js/CheckBox.js"></script>
+		</div>
+
+		<!-- Сведения о номере,  -->
+
+		<div class="IntelligenceForm">
+			<div class="IntelligenceForm__img">
+				<span class="material-icons">insert_emoticon</span>
+			</div>
+			<div class="IntelligenceForm__text">
+				<div class="IntelligenceForm__name">Комфорт</div>
+				<div class="IntelligenceForm__Comment">Шумопоглощающие стены</div>
+			</div>
+		</div>
+
+		<div class="IntelligenceForm">
+			<div class="IntelligenceForm__img">
+				<span class="material-icons">location_city</span>
+			</div>
+			<div class="IntelligenceForm__text">
+				<div class="IntelligenceForm__name">Удобство</div>
+				<div class="IntelligenceForm__Comment">Окно в каждой из спален</div>
+			</div>
+		</div>
+
+		<!-- Чекбокс лист -->
+
+		<div class="CheckBoxForm">
+			<div class="CheckBoxForm__title ">Checkbox Buttons</div>
+			<div class="CheckBoxform__ChekList CheckBoxform__ChekList_open">
+				<div class="CheckBoxform__ChekItem">
+					<input type="checkbox" name="Permissions" id="CanSmoke">
+					<label for="CanSmoke">Можно курить</label>
+				</div>
+				<div class="CheckBoxform__ChekItem">
+					<input type="checkbox" name="Permissions" id="petsAllowed">
+					<label for="petsAllowed">Можно с питомцами</label>
+				</div>
+				<div class="CheckBoxform__ChekItem">
+					<input type="checkbox" name="Permissions" id="beInvited">
+					<label for="beInvited">Можно пригласить гостей<br> (до 10 человек)</label>
+				</div>
+			</div>
+		</div>
+
+
+<!-- Радио кнопки -->
+
+	<div class=" standForm">
+			<div class=" standForm__heading"><span>Radio Buttons</span> <span></span></div>
+			<div class="RadioBatt">
+				<div class="RadioBatt__Item">
+					<input type="radio" name="sex" id="Men">
+					<label class="radio" for="Men">Мужчина</label>
+				</div>
+				<div class="RadioBatt__Item">
+					<input type="radio" name="sex" id="WoMen">
+					<label class="radio" for="WoMen">Женщина</label>
+				</div>
+			</div>
+	</div>
+
+<!-- Переключатели -->
+
+	<div class=" standForm">
+			<div class=" standForm__heading"><span>toggle</span> <span></span></div>
+			<div class="checkboxSwitch">
+					<input type="checkbox" class="switch" name="specialOffers" id="specialOffers_ON">
+					<label class="checkboxSwitch_label" for="specialOffers_ON"><span>Получать спецпредложения</span></label>
+			</div>
+	</div>
+
+<!-- Кнопка лайка -->
+
+	<div class=" standForm">
+			<div class=" standForm__heading"><span>like button</span> <span></span></div>
+			<div class="likeForm">
+					<button class="likeButton">
+						<span class="material-icons likeButton__icon">favorite_border</span>
+						<span class="numberLike">2</span>
+					</button>
+			</div>
+			<script src="js/likebutton.js"></script>
+	</div>
+
+
+<!-- Рейтинг -->
+
+<div class=" standForm">
+			<div class=" standForm__heading"><span>rate button</span> <span></span></div>
+			<div class="reitForm">
+					<div class="star-rating">
+						<input type="radio" id="5-stars" name="rating" value="5" />
+						<label for="5-stars" class="star"></label>
+						<input type="radio" id="4-stars" name="rating" value="4" />
+						<label for="4-stars" class="star"></label>
+						<input type="radio" id="3-stars" name="rating" value="3" />
+						<label for="3-stars" class="star"></label>
+						<input type="radio" id="2-stars" name="rating" value="2" />
+						<label for="2-stars" class="star"></label>
+						<input type="radio" id="1-star" name="rating" value="1" />
+						<label for="1-star" class="star"></label>
+					</div>
+			</div>
+	</div>
+
+	<!-- Ценовой диапозон -->
+
+	<div class=" standForm">
+			<div class=" standForm__heading"><span>Range Slider</span> <span></span></div>
+			
+	</div>
+
+
+
+
+
+
+
+
+
+	</body>
+</html>
