@@ -43,51 +43,663 @@
 		<div class="searchroomP">
 			<div class="wrapper">
 				<div class="searchroomP__flexbox">
-					<div class="searchroomP__sidebar">
-						<div class="searchroomP__datevar">
-						ДАТЫ ПРЕБЫВАНИЯ В ОТЕЛЕ
-						<input type="text" class="picker"/>
-						</div>
-						<div class="searchroomP__guestvar">
-							Гости
-							<div class="guest">
-								<span>Сколько гостей</span>
-								<i class="fa fa-chevron-down" aria-hidden="true"></i>
-							</div>
-							<div class="guest_varible_popap popap">
-								<div class="guest__itemvariablebox">
-									<div class="guest__variableItem">Взрослые</div>
-									<div class="guest__variableItem">
-										<button class = "button_numberguests button__minus_abults">-</button>
-										<span class="result_abults">0</span>
-										<button class = "button_numberguests button__plus_abults">+</button>
-									</div>
-								</div>
-								<div class="guest__itemvariablebox">
-									<div class="guest__variableItem">Дети</div>
-									<div class="guest__variableItem">
-										<button class = "button_numberguests button__minus_child">-</button>
-										<span class="result_child">0</span>
-										<button class = "button_numberguests button__plus_child">+</button>
-									</div>
-								</div>
-								<div class="guest__itemvariablebox">
-									<div class="guest__variableItem">Младенцы</div>
-									<div class="guest__variableItem">
-										<button class = "button_numberguests button__minus_baby">-</button>
-										<span class="result_baby">0</span>
-										<button class = "button_numberguests button__plus_baby">+</button>
-									</div>
-								</div>
-								<div class="popap__footer">
-									<button class="popap__buttonClear Button_Clear">Очистить</button>
-									<button class="popap__buttonApply Button_Aply">Применить</button>
+					<div class="searchroomP__sidebar sidebarSR">
+						<div class="sidebarSR__date">
+							<div class="EmailForm standForm_min">
+								<div class="EmailForm__name standForm_min__heading"><span>Даты пребывения в отеле</span> <span></span></div>
+								<div class="EmailForm__input standForm_min__Form">
+									<input type="text" class="dateRange">
+									<i class="fa fa-chevron-down" aria-hidden="true"></i>
+									<script src="js/datepickerOne.js"></script>
 								</div>
 							</div>
 						</div>
-						
+						<div class="sidebarSR__guest">
+							<div class="Popap standForm_min">
+								<div class="standForm__heading"><span>гости</span> <span></span></div>
+								<div class="standForm__Popap_min">
+									<div class="manyGuests PopapForm__inputForm">
+										Сколько гостей 
+									</div>
+									<i class="fa fa-chevron-down" aria-hidden="true"></i>
+									<div class="manyGuests__popapBox PopapForm__popapBox_min">
+										<div class="manyGuests__popapGuest PopapForm__popapGuest">
+											<span class="manyGuests__name PopapForm__name">Взрослые</span>
+											<div>
+												<button class="manyGuests__Adults_minus PopapForm_mathSign">-</button>
+												<span class="manyGuests__Adults_result PopapForm_quantity">0</span>
+												<button class="manyGuests__Adults_plus PopapForm_mathSign">+</button>
+											</div>
+										</div>
+										<div class="manyGuests__popapGuest PopapForm__popapGuest">
+											<span class="manyGuests__name PopapForm__name">Дети</span>
+											<div>
+												<button class="manyGuests__Children_minus PopapForm_mathSign">-</button>
+												<span class="manyGuests__Children_result PopapForm_quantity">0</span>
+												<button class="manyGuests__Children_plus PopapForm_mathSign">+</button>
+											</div>
+										</div><div class="manyGuests__popapGuest PopapForm__popapGuest">
+											<span class="manyGuests__name PopapForm__name">Младенцы</span>
+											<div>
+												<button class="manyGuests__Babies_minus PopapForm_mathSign">-</button>
+												<span class="manyGuests__Babies_result PopapForm_quantity">0</span>
+												<button class="manyGuests__Babies_plus PopapForm_mathSign">+</button>
+											</div>
+										</div>
+										<div class="PopapForm__footer">
+											<button class="manyGuests__ButtonClear PopapForm__batton PopapForm__batton_clear">Очистить</button>
+											<button class="manyGuests__ButtonAcept PopapForm__batton">Принять</button>
+										</div>
+									</div>
+								</div>
+								<script src="js/popap_F.js"></script>
+							</div>
+						</div>
+						<div class="sidebarSR__priserange">
+							<div class=" standForm_min">
+								<div class=" standForm_min__heading"><span>Диапазон цены</span> 
+									<span>
+										<input type="text" class="min-value" value="5000&#8381;" readonly/> -
+										<input type="text" class="max-value" value="10000&#8381;" readonly/>
+									</span>
+								</div>
+								<div class="rangeSliderForm">
+								<div id="slider"></div>
+								</div>
+								<script src="js/nouislider.js"></script>
+							</div>
+							<div class="sidebarSR__PRComment">Стоимость за сутки пребывания в номере</div>
+						</div>
+						<div class="sidebarSR__rulles">
+							<div class="CheckBoxform">
+								<div class="CheckBoxform__title ">Правила дома</div>
+								<div class="CheckBoxform__ChekList CheckBoxform__ChekList_open">
+									<div class="CheckBoxform__ChekItem">
+										<input type="checkbox" name="Permissions" id="CanSmoke">
+										<label for="CanSmoke">Можно курить</label>
+									</div>
+									<div class="CheckBoxform__ChekItem">
+										<input type="checkbox" name="Permissions" id="petsAllowed">
+										<label for="petsAllowed">Можно с питомцами</label>
+									</div>
+									<div class="CheckBoxform__ChekItem">
+										<input type="checkbox" name="Permissions" id="beInvited">
+										<label for="beInvited">Можно пригласить гостей<br> (до 10 человек)</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="sidebarSR__Availability">
+							<div class="CheckBoxform">
+								<div class="CheckBoxform__title ">Доступность</div>
+								<div class="CheckBoxform__ChekList CheckBoxform__ChekList_open CheckBoxform__ChekList_rich">
+									<div class="CheckBoxform__ChekItem">
+										<input type="checkbox" name="Features" id="wideCorridor">
+										<label class="Features" for="wideCorridor">Широкий коридор</label>
+										<div class="CheckBoxform__addition">Ширина коридоров в номере не менее 91 см.</div>
+									</div>
+									<div class="CheckBoxform__ChekItem">
+										<input type="checkbox" name="Features" id="assistantDisabled">
+										<label class="Features" for="assistantDisabled">Помощник для инвалидов</label>
+										<div class="CheckBoxform__addition">На 1 этаже вас встретит специалист  и проводит до номера.</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="sidebarSR__facilities">
+							<div class="Popap standForm_min">
+								<div class="standForm_min__heading"><span>Удобства номера</span> <span></span></div>
+								<div class="standForm__Popap_min">
+									<div class="manyRooms PopapForm__inputForm">
+										<span class="manyRooms__null">Какие удобства</span><span class="manyRooms__fullvar1"> </span><span class="manyRooms__fullvar2"> </span><span class="manyRooms__fullvar3"></span>
+									</div>
+									<i class="fa fa-chevron-down" aria-hidden="true"></i>
+									<div class="manyRooms__popapBox PopapForm__popapBox_min">
+										<div class="manyRooms__popapGuest PopapForm__popapGuest">
+											<span class="manyRooms__name PopapForm__name">Спальни</span>
+											<div>
+												<button class="manyRooms__Adults_minus PopapForm_mathSign">-</button>
+												<span class="manyRooms__Adults_result PopapForm_quantity">0</span>
+												<button class="manyRooms__Adults_plus PopapForm_mathSign">+</button>
+											</div>
+										</div>
+										<div class="manyRooms__popapGuest PopapForm__popapGuest">
+											<span class="manyRooms__name PopapForm__name">кровати</span>
+											<div>
+												<button class="manyRooms__Children_minus PopapForm_mathSign">-</button>
+												<span class="manyRooms__Children_result PopapForm_quantity">0</span>
+												<button class="manyRooms__Children_plus PopapForm_mathSign">+</button>
+											</div>
+										</div><div class="manyRooms__popapGuest PopapForm__popapGuest">
+											<span class="manyRooms__name PopapForm__name">Ванные комнаты</span>
+											<div>
+												<button class="manyRooms__Babies_minus PopapForm_mathSign">-</button>
+												<span class="manyRooms__Babies_result PopapForm_quantity">0</span>
+												<button class="manyRooms__Babies_plus PopapForm_mathSign">+</button>
+											</div>
+										</div>
+										<div class="PopapForm__footer">
+											<button class="manyRooms__ButtonClear PopapForm__batton PopapForm__batton_clear">Очистить</button>
+											<button class="manyRooms__ButtonAcept PopapForm__batton">Принять</button>
+										</div>
+									</div>
+								</div>
+								<script src="js/popap_F.js"></script>
+							</div>
+						</div>
+						<div class="sidebarSR__additionalAmenities">
+							<div class="CheckBoxform">
+								<div class="CheckBoxform__Name">
+									Дополнительные удобства
+									<span class="material-icons">expand_more</span>
+								</div>
+								<div class="CheckBoxform__ChekList">
+									<div class="CheckBoxform__ChekItem">
+										<input type="checkbox" name="facilities" id="breakfast">
+										<label for="breakfast">Завтрак</label>
+									</div>
+									<div class="CheckBoxform__ChekItem">
+										<input type="checkbox" name="facilities" id="desk">
+										<label for="desk">Письменный стол</label>
+									</div>
+									<div class="CheckBoxform__ChekItem">
+										<input type="checkbox" name="facilities" id="FeedingChair">
+										<label for="FeedingChair">Стул для кормления</label>
+									</div>
+									<div class="CheckBoxform__ChekItem">
+										<input type="checkbox" name="facilities" id="Crib">
+										<label for="Crib">Кроватка</label>
+									</div>
+									<div class="CheckBoxform__ChekItem">
+										<input type="checkbox" name="facilities" id="TV">
+										<label for="TV">Телевизор</label>
+									</div>
+									<div class="CheckBoxform__ChekItem">
+										<input type="checkbox" name="facilities" id="Shampoo">
+										<label for="Shampoo">Шампунь</label>
+									</div>
+								</div>
+								<script src="js/CheckBox.js"></script>
+							</div>
+						</div>
 					</div>
-					<div class="searcroom__handpickedNumbers"></div>
+					<div class="searchroomP__handpickedNumbers handpickedNumbers">
+						<div class="handpickedNumbers__title">Номера, которые мы для вас подобрали</div>
+						<div class="handpickedNumbers__flexbox">
+							<a href="details_room.html"><div class="handpickedNumbers__item">
+								<div class="CardNumberBlocK">
+									<div class="CardNumberBlocK__img">
+										<img src="img/Otel/otel_1.png" alt="Картинка отсутствует">
+										<div class="CardNumberBlocK__tab">
+											<span class="tab-active"></span>
+											<span></span>
+											<span></span>
+											<span></span>
+										</div>
+									</div>
+									<div class="CardNumberBlocK__info">
+										<span>№ </span>
+										<span>888 </span>
+										<span>люкс</span>
+										<span>9 990&#8381; </span>
+										<span>в сутки</span>
+									</div>
+									<div class="CardNumberBlocK__Comment">
+													<div class="star-rating">
+														<input type="radio" id="Otel_2-5-stars" name="rating_Otel_1" value="5" checked disabled/>
+														<label for="Otel_2-5-stars" class="star"></label>
+														<input type="radio" id="Otel_2-4-stars" name="rating_Otel_1" value="4" disabled/>
+														<label for="Otel_2-4-stars" class="star"></label>
+														<input type="radio" id="Otel_2-3-stars" name="rating_Otel_1" value="3" disabled/>
+														<label for="Otel_2-3-stars" class="star"></label>
+														<input type="radio" id="Otel_2-2-stars" name="rating_Otel_1" value="2" disabled/>
+														<label for="Otel_2-2-stars" class="star"></label>
+														<input type="radio" id="Otel_2-1-star" name="rating_Otel_1" value="1" disabled/>
+														<label for="Otel_2-1-star" class="star"></label>
+													</div>
+										<div class="CardNumberBlocK__Reviews">
+											<span>145</span>
+											Отзывов
+										</div>
+									</div>
+								</div>
+							</div></a>
+							<div class="handpickedNumbers__item">
+								<div class="CardNumberBlocK">
+									<div class="CardNumberBlocK__img">
+										<img src="img/Otel/otel_2.png" alt="Картинка отсутствует">
+										<div class="CardNumberBlocK__tab">
+											<span class="tab-active"></span>
+											<span></span>
+											<span></span>
+											<span></span>
+										</div>
+									</div>
+									<div class="CardNumberBlocK__info">
+										<span>№ </span>
+										<span>840 </span>
+										<span>люкс</span>
+										<span>9 990&#8381; </span>
+										<span>в сутки</span>
+									</div>
+									<div class="CardNumberBlocK__Comment">
+													<div class="star-rating">
+														<input type="radio" id="Otel_2-5-stars" name="rating_Otel_2" value="5" disabled/>
+														<label for="Otel_2-5-stars" class="star"></label>
+														<input type="radio" id="Otel_2-4-stars" name="rating_Otel_2" value="4" checked disabled/>
+														<label for="Otel_2-4-stars" class="star"></label>
+														<input type="radio" id="Otel_2-3-stars" name="rating_Otel_2" value="3" disabled/>
+														<label for="Otel_2-3-stars" class="star"></label>
+														<input type="radio" id="Otel_2-2-stars" name="rating_Otel_2" value="2" disabled/>
+														<label for="Otel_2-2-stars" class="star"></label>
+														<input type="radio" id="Otel_2-1-star" name="rating_Otel_2" value="1" disabled/>
+														<label for="Otel_2-1-star" class="star"></label>
+													</div>
+										<div class="CardNumberBlocK__Reviews">
+											<span>65</span>
+											Отзывов
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="handpickedNumbers__item">
+								<div class="CardNumberBlocK">
+									<div class="CardNumberBlocK__img">
+										<img src="img/Otel/otel_3.png" alt="Картинка отсутствует">
+										<div class="CardNumberBlocK__tab">
+											<span class="tab-active"></span>
+											<span></span>
+											<span></span>
+											<span></span>
+										</div>
+									</div>
+									<div class="CardNumberBlocK__info">
+										<span>№ </span>
+										<span>980 </span>
+										<span>люкс</span>
+										<span>8 500&#8381; </span>
+										<span>в сутки</span>
+									</div>
+									<div class="CardNumberBlocK__Comment">
+													<div class="star-rating">
+														<input type="radio" id="Otel_2-5-stars" name="rating_Otel_3" value="5" disabled/>
+														<label for="Otel_2-5-stars" class="star"></label>
+														<input type="radio" id="Otel_2-4-stars" name="rating_Otel_3" value="4" disabled/>
+														<label for="Otel_2-4-stars" class="star"></label>
+														<input type="radio" id="Otel_2-3-stars" name="rating_Otel_3" value="3" checked disabled/>
+														<label for="Otel_2-3-stars" class="star"></label>
+														<input type="radio" id="Otel_2-2-stars" name="rating_Otel_3" value="2" disabled/>
+														<label for="Otel_2-2-stars" class="star"></label>
+														<input type="radio" id="Otel_2-1-star" name="rating_Otel_3" value="1" disabled/>
+														<label for="Otel_2-1-star" class="star"></label>
+													</div>
+										<div class="CardNumberBlocK__Reviews">
+											<span>35</span>
+											Отзывов
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="handpickedNumbers__item">
+								<div class="CardNumberBlocK">
+									<div class="CardNumberBlocK__img">
+										<img src="img/Otel/otel_4.png" alt="Картинка отсутствует">
+										<div class="CardNumberBlocK__tab">
+											<span class="tab-active"></span>
+											<span></span>
+											<span></span>
+											<span></span>
+										</div>
+									</div>
+									<div class="CardNumberBlocK__info">
+										<span>№ </span>
+										<span>856 </span>
+										<span>люкс</span>
+										<span>7 300&#8381; </span>
+										<span>в сутки</span>
+									</div>
+									<div class="CardNumberBlocK__Comment">
+													<div class="star-rating">
+														<input type="radio" id="Otel_2-5-stars" name="rating_Otel_4" value="5" checked disabled/>
+														<label for="Otel_2-5-stars" class="star"></label>
+														<input type="radio" id="Otel_2-4-stars" name="rating_Otel_4" value="4" disabled/>
+														<label for="Otel_2-4-stars" class="star"></label>
+														<input type="radio" id="Otel_2-3-stars" name="rating_Otel_4" value="3" disabled/>
+														<label for="Otel_2-3-stars" class="star"></label>
+														<input type="radio" id="Otel_2-2-stars" name="rating_Otel_4" value="2" disabled/>
+														<label for="Otel_2-2-stars" class="star"></label>
+														<input type="radio" id="Otel_2-1-star" name="rating_Otel_4" value="1" disabled/>
+														<label for="Otel_2-1-star" class="star"></label>
+													</div>
+										<div class="CardNumberBlocK__Reviews">
+											<span>19</span>
+											Отзывов
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="handpickedNumbers__item">
+								<div class="CardNumberBlocK">
+									<div class="CardNumberBlocK__img">
+										<img src="img/Otel/otel_5.png" alt="Картинка отсутствует">
+										<div class="CardNumberBlocK__tab">
+											<span class="tab-active"></span>
+											<span></span>
+											<span></span>
+											<span></span>
+										</div>
+									</div>
+									<div class="CardNumberBlocK__info">
+										<span>№ </span>
+										<span>740 </span>
+										<span>люкс</span>
+										<span>6 600&#8381; </span>
+										<span>в сутки</span>
+									</div>
+									<div class="CardNumberBlocK__Comment">
+													<div class="star-rating">
+														<input type="radio" id="Otel_2-5-stars" name="rating_Otel_5" value="5" disabled/>
+														<label for="Otel_2-5-stars" class="star"></label>
+														<input type="radio" id="Otel_2-4-stars" name="rating_Otel_5" value="4" checked disabled/>
+														<label for="Otel_2-4-stars" class="star"></label>
+														<input type="radio" id="Otel_2-3-stars" name="rating_Otel_5" value="3" disabled/>
+														<label for="Otel_2-3-stars" class="star"></label>
+														<input type="radio" id="Otel_2-2-stars" name="rating_Otel_5" value="2" disabled/>
+														<label for="Otel_2-2-stars" class="star"></label>
+														<input type="radio" id="Otel_2-1-star" name="rating_Otel_5" value="1" disabled/>
+														<label for="Otel_2-1-star" class="star"></label>
+													</div>
+										<div class="CardNumberBlocK__Reviews">
+											<span>44</span>
+											Отзывов
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="handpickedNumbers__item">
+								<div class="CardNumberBlocK">
+									<div class="CardNumberBlocK__img">
+										<img src="img/Otel/otel_6.png" alt="Картинка отсутствует">
+										<div class="CardNumberBlocK__tab">
+											<span class="tab-active"></span>
+											<span></span>
+											<span></span>
+											<span></span>
+										</div>
+									</div>
+									<div class="CardNumberBlocK__info">
+										<span>№ </span>
+										<span>982 </span>
+										<span>люкс</span>
+										<span>5 800&#8381; </span>
+										<span>в сутки</span>
+									</div>
+									<div class="CardNumberBlocK__Comment">
+													<div class="star-rating">
+														<input type="radio" id="Otel_2-5-stars" name="rating_Otel_6" value="5" disabled/>
+														<label for="Otel_2-5-stars" class="star"></label>
+														<input type="radio" id="Otel_2-4-stars" name="rating_Otel_6" value="4" disabled/>
+														<label for="Otel_2-4-stars" class="star"></label>
+														<input type="radio" id="Otel_2-3-stars" name="rating_Otel_6" value="3" checked disabled/>
+														<label for="Otel_2-3-stars" class="star"></label>
+														<input type="radio" id="Otel_2-2-stars" name="rating_Otel_6" value="2" disabled/>
+														<label for="Otel_2-2-stars" class="star"></label>
+														<input type="radio" id="Otel_2-1-star" name="rating_Otel_6" value="1" disabled/>
+														<label for="Otel_2-1-star" class="star"></label>
+													</div>
+										<div class="CardNumberBlocK__Reviews">
+											<span>56</span>
+											Отзывов
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="handpickedNumbers__item">
+								<div class="CardNumberBlocK">
+									<div class="CardNumberBlocK__img">
+										<img src="img/Otel/otel_7.png" alt="Картинка отсутствует">
+										<div class="CardNumberBlocK__tab">
+											<span class="tab-active"></span>
+											<span></span>
+											<span></span>
+											<span></span>
+										</div>
+									</div>
+									<div class="CardNumberBlocK__info">
+										<span>№ </span>
+										<span>678 </span>
+										<span>люкс</span>
+										<span>5 500&#8381; </span>
+										<span>в сутки</span>
+									</div>
+									<div class="CardNumberBlocK__Comment">
+													<div class="star-rating">
+														<input type="radio" id="Otel_2-5-stars" name="rating_Otel_7" value="5" checked disabled/>
+														<label for="Otel_2-5-stars" class="star"></label>
+														<input type="radio" id="Otel_2-4-stars" name="rating_Otel_7" value="4" disabled/>
+														<label for="Otel_2-4-stars" class="star"></label>
+														<input type="radio" id="Otel_2-3-stars" name="rating_Otel_7" value="3" disabled/>
+														<label for="Otel_2-3-stars" class="star"></label>
+														<input type="radio" id="Otel_2-2-stars" name="rating_Otel_7" value="2" disabled/>
+														<label for="Otel_2-2-stars" class="star"></label>
+														<input type="radio" id="Otel_2-1-star" name="rating_Otel_7" value="1" disabled/>
+														<label for="Otel_2-1-star" class="star"></label>
+													</div>
+										<div class="CardNumberBlocK__Reviews">
+											<span>45</span>
+											Отзывов
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="handpickedNumbers__item">
+								<div class="CardNumberBlocK">
+									<div class="CardNumberBlocK__img">
+										<img src="img/Otel/otel_8.png" alt="Картинка отсутствует">
+										<div class="CardNumberBlocK__tab">
+											<span class="tab-active"></span>
+											<span></span>
+											<span></span>
+											<span></span>
+										</div>
+									</div>
+									<div class="CardNumberBlocK__info">
+										<span>№ </span>
+										<span>450 </span>
+										<span>люкс</span>
+										<span>5 300&#8381; </span>
+										<span>в сутки</span>
+									</div>
+									<div class="CardNumberBlocK__Comment">
+													<div class="star-rating">
+														<input type="radio" id="Otel_2-5-stars" name="rating_Otel_8" value="5" disabled/>
+														<label for="Otel_2-5-stars" class="star"></label>
+														<input type="radio" id="Otel_2-4-stars" name="rating_Otel_8" value="4" checked disabled/>
+														<label for="Otel_2-4-stars" class="star"></label>
+														<input type="radio" id="Otel_2-3-stars" name="rating_Otel_8" value="3" disabled/>
+														<label for="Otel_2-3-stars" class="star"></label>
+														<input type="radio" id="Otel_2-2-stars" name="rating_Otel_8" value="2" disabled/>
+														<label for="Otel_2-2-stars" class="star"></label>
+														<input type="radio" id="Otel_2-1-star" name="rating_Otel_8" value="1" disabled/>
+														<label for="Otel_2-1-star" class="star"></label>
+													</div>
+										<div class="CardNumberBlocK__Reviews">
+											<span>39</span>
+											Отзывов
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="handpickedNumbers__item">
+								<div class="CardNumberBlocK">
+									<div class="CardNumberBlocK__img">
+										<img src="img/Otel/otel_9.png" alt="Картинка отсутствует">
+										<div class="CardNumberBlocK__tab">
+											<span class="tab-active"></span>
+											<span></span>
+											<span></span>
+											<span></span>
+										</div>
+									</div>
+									<div class="CardNumberBlocK__info">
+										<span>№ </span>
+										<span>350 </span>
+										<span>люкс</span>
+										<span>5 000&#8381; </span>
+										<span>в сутки</span>
+									</div>
+									<div class="CardNumberBlocK__Comment">
+													<div class="star-rating">
+														<input type="radio" id="Otel_2-5-stars" name="rating_Otel_9" value="5" disabled/>
+														<label for="Otel_2-5-stars" class="star"></label>
+														<input type="radio" id="Otel_2-4-stars" name="rating_Otel_9" value="4" disabled/>
+														<label for="Otel_2-4-stars" class="star"></label>
+														<input type="radio" id="Otel_2-3-stars" name="rating_Otel_9" value="3" checked disabled/>
+														<label for="Otel_2-3-stars" class="star"></label>
+														<input type="radio" id="Otel_2-2-stars" name="rating_Otel_9" value="2" disabled/>
+														<label for="Otel_2-2-stars" class="star"></label>
+														<input type="radio" id="Otel_2-1-star" name="rating_Otel_9" value="1" disabled/>
+														<label for="Otel_2-1-star" class="star"></label>
+													</div>
+										<div class="CardNumberBlocK__Reviews">
+											<span>77</span>
+											Отзывов
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="handpickedNumbers__item">
+								<div class="CardNumberBlocK">
+									<div class="CardNumberBlocK__img">
+										<img src="img/Otel/otel_10.png" alt="Картинка отсутствует">
+										<div class="CardNumberBlocK__tab">
+											<span class="tab-active"></span>
+											<span></span>
+											<span></span>
+											<span></span>
+										</div>
+									</div>
+									<div class="CardNumberBlocK__info">
+										<span>№ </span>
+										<span>666 </span>
+										<span>люкс</span>
+										<span>5 000&#8381; </span>
+										<span>в сутки</span>
+									</div>
+									<div class="CardNumberBlocK__Comment">
+													<div class="star-rating">
+														<input type="radio" id="Otel_2-5-stars" name="rating_Otel_10" value="5" checked disabled/>
+														<label for="Otel_2-5-stars" class="star"></label>
+														<input type="radio" id="Otel_2-4-stars" name="rating_Otel_10" value="4" checked disabled/>
+														<label for="Otel_2-4-stars" class="star"></label>
+														<input type="radio" id="Otel_2-3-stars" name="rating_Otel_10" value="3" disabled/>
+														<label for="Otel_2-3-stars" class="star"></label>
+														<input type="radio" id="Otel_2-2-stars" name="rating_Otel_10" value="2" disabled/>
+														<label for="Otel_2-2-stars" class="star"></label>
+														<input type="radio" id="Otel_2-1-star" name="rating_Otel_10" value="1" disabled/>
+														<label for="Otel_2-1-star" class="star"></label>
+													</div>
+										<div class="CardNumberBlocK__Reviews">
+											<span>25</span>
+											Отзывов
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="handpickedNumbers__item">
+								<div class="CardNumberBlocK">
+									<div class="CardNumberBlocK__img">
+										<img src="img/Otel/otel_11.png" alt="Картинка отсутствует">
+										<div class="CardNumberBlocK__tab">
+											<span class="tab-active"></span>
+											<span></span>
+											<span></span>
+											<span></span>
+										</div>
+									</div>
+									<div class="CardNumberBlocK__info">
+										<span>№ </span>
+										<span>444 </span>
+										<span>люкс</span>
+										<span>5 000&#8381; </span>
+										<span>в сутки</span>
+									</div>
+									<div class="CardNumberBlocK__Comment">
+													<div class="star-rating">
+														<input type="radio" id="Otel_2-5-stars" name="rating_Otel_11" value="5" disabled/>
+														<label for="Otel_2-5-stars" class="star"></label>
+														<input type="radio" id="Otel_2-4-stars" name="rating_Otel_11" value="4"  disabled/>
+														<label for="Otel_2-4-stars" class="star"></label>
+														<input type="radio" id="Otel_2-3-stars" name="rating_Otel_11" value="3" checked disabled/>
+														<label for="Otel_2-3-stars" class="star"></label>
+														<input type="radio" id="Otel_2-2-stars" name="rating_Otel_11" value="2" disabled/>
+														<label for="Otel_2-2-stars" class="star"></label>
+														<input type="radio" id="Otel_2-1-star" name="rating_Otel_11" value="1" disabled/>
+														<label for="Otel_2-1-star" class="star"></label>
+													</div>
+										<div class="CardNumberBlocK__Reviews">
+											<span>15</span>
+											Отзывов
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="handpickedNumbers__item">
+								<div class="CardNumberBlocK">
+									<div class="CardNumberBlocK__img">
+										<img src="img/Otel/otel_12.png" alt="Картинка отсутствует">
+										<div class="CardNumberBlocK__tab">
+											<span class="tab-active"></span>
+											<span></span>
+											<span></span>
+											<span></span>
+										</div>
+									</div>
+									<div class="CardNumberBlocK__info">
+										<span>№ </span>
+										<span>352 </span>
+										<span>люкс</span>
+										<span>5 000&#8381; </span>
+										<span>в сутки</span>
+									</div>
+									<div class="CardNumberBlocK__Comment">
+													<div class="star-rating">
+														<input type="radio" id="Otel_2-5-stars" name="rating_Otel_12" value="5" disabled/>
+														<label for="Otel_2-5-stars" class="star"></label>
+														<input type="radio" id="Otel_2-4-stars" name="rating_Otel_12" value="4"  disabled/>
+														<label for="Otel_2-4-stars" class="star"></label>
+														<input type="radio" id="Otel_2-3-stars" name="rating_Otel_12" value="3" checked disabled/>
+														<label for="Otel_2-3-stars" class="star"></label>
+														<input type="radio" id="Otel_2-2-stars" name="rating_Otel_12" value="2" disabled/>
+														<label for="Otel_2-2-stars" class="star"></label>
+														<input type="radio" id="Otel_2-1-star" name="rating_Otel_12" value="1" disabled/>
+														<label for="Otel_2-1-star" class="star"></label>
+													</div>
+										<div class="CardNumberBlocK__Reviews">
+											<span>55</span>
+											Отзывов
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="handpickedNumbers__pagelist">
+							<div class=" standForm">
+									<div class=" standForm__heading"><span>pagination</span> <span></span></div>
+									<div class="standForm__pagination pagination">
+										<div class="pagination__flexBox">
+											<button class="pagination__item">1</button>
+											<button class="pagination__item">2</button>
+											<button class="pagination__item">3</button>
+											<button class="pagination__item">...</button>
+											<button class="pagination__item">15</button>
+											<button class="pagination__item"><span class="material-icons">arrow_forward</span></button>
+										</div>
+										<div class="pagination__comment">1 – 12 из 100+ вариантов аренды</div>
+									</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

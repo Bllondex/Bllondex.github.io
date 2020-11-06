@@ -202,8 +202,8 @@
 
 		<!-- Чекбокс лист -->
 
-		<div class="CheckBoxForm">
-			<div class="CheckBoxForm__title ">Checkbox Buttons</div>
+		<div class="CheckBoxform">
+			<div class="CheckBoxform__title ">Checkbox Buttons</div>
 			<div class="CheckBoxform__ChekList CheckBoxform__ChekList_open">
 				<div class="CheckBoxform__ChekItem">
 					<input type="checkbox" name="Permissions" id="CanSmoke">
@@ -252,9 +252,9 @@
 	<div class=" standForm">
 			<div class=" standForm__heading"><span>like button</span> <span></span></div>
 			<div class="likeForm">
-					<button class="likeButton">
-						<span class="material-icons likeButton__icon">favorite_border</span>
-						<span class="numberLike">2</span>
+					<button class="likeButton" id='ButtonLike'>
+						<span class="material-icons likeButton__icon" id="icon">favorite_border</span>
+						<span class="numberLike" id='idNumber'></span>
 					</button>
 			</div>
 			<script src="js/likebutton.js"></script>
@@ -284,17 +284,457 @@
 	<!-- Ценовой диапозон -->
 
 	<div class=" standForm">
-			<div class=" standForm__heading"><span>Range Slider</span> <span></span></div>
-			
+			<div class=" standForm__heading"><span>Range Slider</span> 
+				<span>
+					<input type="text" class="min-value" value="5000&#8381;" readonly/> -
+					<input type="text" class="max-value" value="10000&#8381;" readonly/>
+				</span>
+			</div>
+			<div class="rangeSliderForm">
+			<div id="slider"></div>
+			</div>
+			<script src="js/nouislider.js"></script>
 	</div>
 
+	<!-- Кнопки -->
+	<div class=" standForm">
+			<div class=" standForm__heading"><span>button</span> <span></span></div>
+			<div class="ButtinForm">
+				<div class="ButtinForm__button">
+					<button class="ClickMeFon">Click Me</button>
+				</div>
+				<div class="ButtinForm__button">
+					<button class="ClickMe">Click Me</button>
+				</div>
+				<div class="ButtinForm__button">
+					<button class="ClickMeNon">Click Me</button>
+				</div>
+				<div class="ButtinForm__button">
+					<button class="Checkout">Перейти к оплате <span class="material-icons button__arrow">arrow_forward</span></button>
+				</div>
+			</div>
+	</div>
+
+	<!-- Богатый чекбокс -->
+
+	<div class="CheckBoxform">
+			<div class="CheckBoxform__title ">Checkbox Buttons</div>
+			<div class="CheckBoxform__ChekList CheckBoxform__ChekList_open CheckBoxform__ChekList_rich">
+				<div class="CheckBoxform__ChekItem">
+					<input type="checkbox" name="Features" id="wideCorridor">
+					<label class="Features" for="wideCorridor">Широкий коридор</label>
+					<div class="CheckBoxform__addition">Ширина коридоров в номере не менее 91 см.</div>
+				</div>
+				<div class="CheckBoxform__ChekItem">
+					<input type="checkbox" name="Features" id="assistantDisabled">
+					<label class="Features" for="assistantDisabled">Помощник для инвалидов</label>
+					<div class="CheckBoxform__addition">На 1 этаже вас встретит специалист  и проводит до номера.</div>
+				</div>
+			</div>
+		</div>
+
+<!-- Список -->
+
+	<div class=" standForm">
+			<div class=" standForm__heading"><span>bullet list</span> <span></span></div>
+			<div class="standForm__boxBullet">
+				<ul class="bulletList">
+					<li class="bulletItem">Нельзя с питомцами</li>
+					<li class="bulletItem">Без вечеринок и мероприятий</li>
+					<li class="bulletItem">Время прибытия — после 13:00, а выезд до 12:00</li>
+				</ul>
+			</div>
+	</div>
+
+<!-- разбивка на страницы -->
+
+<div class=" standForm">
+			<div class=" standForm__heading"><span>pagination</span> <span></span></div>
+			<div class="standForm__pagination pagination">
+				<div class="pagination__flexBox">
+					<button class="pagination__item">1</button>
+					<button class="pagination__item">2</button>
+					<button class="pagination__item">3</button>
+					<button class="pagination__item">...</button>
+					<button class="pagination__item">15</button>
+					<button class="pagination__item"><span class="material-icons">arrow_forward</span></button>
+				</div>
+				<div class="pagination__comment">1 – 12 из 100+ вариантов аренды</div>
+			</div>
+	</div>
+
+	<!-- Отзыв -->
+
+	<div class="CommentForm">
+		<div class="CommentForm__title">
+			<div class="CommentForm__photo"><img src="img/image.png" alt="Фото"></div>
+			<div class="CommentForm__nameinfo">
+				<div class="CommentForm__name">Мурад Сарафанов</div>
+				<div class="CommentForm__ago">5 дней назад</div>
+			</div>
+		</div>
+		<div class="CommentForm__bottom">
+			<div class="CommentForm__like">
+				<button class="likeButton" id="likeComment">
+					<span class="material-icons likeButton__icon" id="iconComment">favorite_border</span>
+					<span class="numberLike" id="numberlikeComment">2</span>
+				</button>
+			</div>
+			<div class="CommentForm__text">
+				Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.
+			</div>
+		</div>
+	</div>
+
+	<!-- Выбор дат прибытие и выезд -->
+					<!-- <div class="serchroom__dateflexbox">
+						<div class="serchroom__dateflexitem">
+							Прибытие <br>
+							<input placeholder="ДД.ММ.ГГГГ" class="date-pickerinp date-picker-start" />
+							<i class="fa fa-chevron-down" aria-hidden="true"></i>
+						</div>
+						<div class="serchroom__dateflexitem">
+							Выезд <br>
+							<input placeholder="ДД.ММ.ГГГГ" class="date-pickerinp date-picker-end" />
+							<i class="fa fa-chevron-down" aria-hidden="true"></i>
+						</div>
+						<div class="date-picker">
+						</div>
+						<script src="js/datepicker.js"></script>
+					</div> -->
 
 
 
 
+	<!-- Найжём номера под ваши пожулания -->
 
 
+<div class="SearchNimberBlock">
+	<div class="SearchNimberBlock__title">Найдём номера под ваши пожелания</div>
+	<div class="SearchNimberBlock__date">
+		<div class="serchroom__dateflexbox">
+						<div class="serchroom__dateflexitem">
+							Прибытие <br>
+							<input placeholder="ДД.ММ.ГГГГ" class="date-pickerinp date-picker-start" />
+							<i class="fa fa-chevron-down" aria-hidden="true"></i>
+						</div>
+						<div class="serchroom__dateflexitem">
+							Выезд <br>
+							<input placeholder="ДД.ММ.ГГГГ" class="date-pickerinp date-picker-end" />
+							<i class="fa fa-chevron-down" aria-hidden="true"></i>
+						</div>
+						<div class="date-picker">
+						</div>
+						<script src="js/datepicker.js"></script>
+					</div>
+	</div>
+	<div class="SearchNimberBlock__guests">
+		<div class="Popap standForm">
+			<div class="standForm__heading"><span>Гсти</span> <span></span></div>
+			<div class="standForm__Popap">
+				<div class="manyGuests PopapForm__inputForm">
+					Сколько гостей 
+				</div>
+				<i class="fa fa-chevron-down" aria-hidden="true"></i>
+				<div class="manyGuests__popapBox PopapForm__popapBox">
+					<div class="manyGuests__popapGuest PopapForm__popapGuest">
+						<span class="manyGuests__name PopapForm__name">Взрослые</span>
+						<div>
+							<button class="manyGuests__Adults_minus PopapForm_mathSign">-</button>
+							<span class="manyGuests__Adults_result PopapForm_quantity">0</span>
+							<button class="manyGuests__Adults_plus PopapForm_mathSign">+</button>
+						</div>
+					</div>
+					<div class="manyGuests__popapGuest PopapForm__popapGuest">
+						<span class="manyGuests__name PopapForm__name">Дети</span>
+						<div>
+							<button class="manyGuests__Children_minus PopapForm_mathSign">-</button>
+							<span class="manyGuests__Children_result PopapForm_quantity">0</span>
+							<button class="manyGuests__Children_plus PopapForm_mathSign">+</button>
+						</div>
+					</div><div class="manyGuests__popapGuest PopapForm__popapGuest">
+						<span class="manyGuests__name PopapForm__name">Младенцы</span>
+						<div>
+							<button class="manyGuests__Babies_minus PopapForm_mathSign">-</button>
+							<span class="manyGuests__Babies_result PopapForm_quantity">0</span>
+							<button class="manyGuests__Babies_plus PopapForm_mathSign">+</button>
+						</div>
+					</div>
+					<div class="PopapForm__footer">
+						<button class="manyGuests__ButtonClear PopapForm__batton PopapForm__batton_clear">Очистить</button>
+						<button class="manyGuests__ButtonAcept PopapForm__batton">Принять</button>
+					</div>
+				</div>
+			</div>
+			<script src="js/popap_F.js"></script>
+		</div>
+	</div>
+	<div class="SearchNimberBlock__buttonSearch">
+		<div class="ButtinForm__button">
+					<button class="Checkout">подобрать номер <span class="material-icons button__arrow">arrow_forward</span></button>
+				</div>
+	</div>
+</div>
 
+
+<!-- Регис рация аккаунта -->
+
+<div class="accountRegistrationBlock">
+	<div class="accountRegistrationBlock__title">Регистрация аккаунта</div>
+	<div class="accountRegistrationBlock__name">
+		<div class="EmailForm__input standForm__Form">
+			<input type="text" name="Name" id="Name" placeholder="Имя">
+		</div>
+	</div>
+	<div class="accountRegistrationBlock__surname">
+		<div class="EmailForm__input standForm__Form">
+			<input type="text" name="surName" id="surName" placeholder="Фамилия">
+		</div>
+	</div>
+	<div class="accountRegistrationBlock__sex">
+		<div class="RadioBatt">
+				<div class="RadioBatt__Item">
+					<input type="radio" name="sex" id="Men">
+					<label class="radio" for="Men">Мужчина</label>
+				</div>
+				<div class="RadioBatt__Item">
+					<input type="radio" name="sex" id="WoMen">
+					<label class="radio" for="WoMen">Женщина</label>
+				</div>
+		</div>
+	</div>
+	<div class="accountRegistrationBlock__dateOfBirth">
+			<div class=" standForm__heading"><span>дата рождения</span> <span></span></div>
+			<div class=" standForm__Form">
+				<input type="text" id="date" placeholder="ДД/ММ/ГГГГ">
+			</div>
+			<script src="js/jquery.maskedinput.js"></script>
+	</div>
+	<div class="accountRegistrationBlock__Email">
+		<div class="EmailForm standForm">
+			<div class="EmailForm__name standForm__heading"><span>данные для входа в сервис</span> <span></span></div>
+			<div class="EmailForm__input standForm__Form">
+				<input type="email" name="email" id="email" placeholder="Email">
+			</div>
+		</div>
+	</div>
+	<div class="accountRegistrationBlock__password">
+		<div class="EmailForm__input standForm__Form">
+			<input type="password" name="password" id="password" placeholder="Пароль">
+		</div>
+	</div>
+	<div class="accountRegistrationBlock__specialOffers">
+					<input type="checkbox" class="switch" name="specialOffers" id="specialOffers_ON">
+					<label class="checkboxSwitch_label" for="specialOffers_ON"><span>Получать спецпредложения</span></label>
+	</div>
+	<div class="accountRegistrationBlock__proceedToCheckout">
+		<div class="ButtinForm__button">
+					<button class="Checkout">Перейти к оплате <span class="material-icons button__arrow">arrow_forward</span></button>
+		</div>
+	</div>
+	<div class="accountRegistrationBlock__ComeIn">
+		<span>Уже есть аккаунт на Toxin</span>
+		<div class="ButtinForm__button">
+					<button class="ClickMe">Click Me</button>
+		</div>
+	</div>
+</div>
+
+<!-- Карточка номера -->
+
+<div class="CardNumberBlock">
+	<div class="CardNumberBlock__title">
+		<span>№ </span>
+		<span>888 </span>
+		<span>люкс</span>
+		<span>9 990&#8381; </span>
+		<span>в сутки</span>
+	</div>
+	<div class="CardNumberBlock__dateForm">
+		<div class="serchroom__dateflexbox">
+						<div class="serchroom__dateflexitem">
+							Прибытие <br>
+							<input placeholder="ДД.ММ.ГГГГ" class="date-pickerinp date-picker-start" />
+							<i class="fa fa-chevron-down" aria-hidden="true"></i>
+						</div>
+						<div class="serchroom__dateflexitem">
+							Выезд <br>
+							<input placeholder="ДД.ММ.ГГГГ" class="date-pickerinp date-picker-end" />
+							<i class="fa fa-chevron-down" aria-hidden="true"></i>
+						</div>
+						<div class="date-picker">
+						</div>
+						<script src="js/datepicker.js"></script>
+					</div>
+	</div>
+	<div class="CardNumberBlock__guest">
+		<div class="Popap standForm">
+			<div class="standForm__heading"><span>Гости</span> <span></span></div>
+			<div class="standForm__Popap">
+				<div class="manyGuests PopapForm__inputForm">
+					Сколько гостей 
+				</div>
+				<i class="fa fa-chevron-down" aria-hidden="true"></i>
+				<div class="manyGuests__popapBox PopapForm__popapBox">
+					<div class="manyGuests__popapGuest PopapForm__popapGuest">
+						<span class="manyGuests__name PopapForm__name">Взрослые</span>
+						<div>
+							<button class="manyGuests__Adults_minus PopapForm_mathSign">-</button>
+							<span class="manyGuests__Adults_result PopapForm_quantity">0</span>
+							<button class="manyGuests__Adults_plus PopapForm_mathSign">+</button>
+						</div>
+					</div>
+					<div class="manyGuests__popapGuest PopapForm__popapGuest">
+						<span class="manyGuests__name PopapForm__name">Дети</span>
+						<div>
+							<button class="manyGuests__Children_minus PopapForm_mathSign">-</button>
+							<span class="manyGuests__Children_result PopapForm_quantity">0</span>
+							<button class="manyGuests__Children_plus PopapForm_mathSign">+</button>
+						</div>
+					</div><div class="manyGuests__popapGuest PopapForm__popapGuest">
+						<span class="manyGuests__name PopapForm__name">Младенцы</span>
+						<div>
+							<button class="manyGuests__Babies_minus PopapForm_mathSign">-</button>
+							<span class="manyGuests__Babies_result PopapForm_quantity">0</span>
+							<button class="manyGuests__Babies_plus PopapForm_mathSign">+</button>
+						</div>
+					</div>
+					<div class="PopapForm__footer">
+						<button class="manyGuests__ButtonClear PopapForm__batton PopapForm__batton_clear">Очистить</button>
+						<button class="manyGuests__ButtonAcept PopapForm__batton">Принять</button>
+					</div>
+				</div>
+			</div>
+			<script src="js/popap_F.js"></script>
+		</div>
+	</div>
+	<div class="CardNumberBlock__infoPrice">
+		<div>9 990₽ х 4 суток</div>
+		<div>39 960₽</div>
+	</div>
+	<div class="CardNumberBlock__infoServices">
+		<div>Сбор за услуги: скидка 2 179₽</div>
+		<div>0₽</div>
+	</div>
+	<div class="CardNumberBlock__infoPriceAdditional">
+		<div>Сбор за дополнительные услуги</div>
+		<div>300₽</div>
+	</div>
+	<div class="CardNumberBlock__total">
+		<div>Итого</div>
+		<div></div>
+		<div>38 081₽</div>
+	</div>
+	<div class="CardNumberBlock__toBook">
+		<div class="ButtinForm__button">
+					<button class="Checkout">Забронировать<span class="material-icons button__arrow">arrow_forward</span></button>
+				</div>
+	</div>
+</div>
+
+<!-- Вход -->
+
+<div class="comeinForm">
+	<div class="comeinForm__title">Войти</div>
+	<div class="comeinForm__Email">
+		<div class="EmailForm__input standForm__Form">
+				<input type="email" name="email" id="email" placeholder="Email">
+		</div>
+	</div>
+	<div class="comeinForm__Password">
+		<div class="EmailForm__input standForm__Form">
+				<input type="password" name="password" id="password" placeholder="Пароль">
+		</div>
+	</div>
+	<div class="comeinForm__Buttom">
+		<div class="ButtinForm__button">
+					<button class="Checkout">войти <span class="material-icons button__arrow">arrow_forward</span></button>
+				</div>
+	</div>
+	<div class="comeinForm__CreateAccount">
+		<span>Нет аккаунта на Toxin?</span>
+		<div class="ButtinForm__button">
+					<button class="ClickMe">создать</button>
+		</div>
+	</div>
+</div>
+
+<!-- Крточка номера -->
+
+
+<div class="CardNumberBlocK">
+	<div class="CardNumberBlocK__img">
+		<img src="img/Otel_1.png" alt="Картинка отсутствует">
+		<div class="CardNumberBlocK__tab">
+			<span class="tab-active"></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<div class="CardNumberBlocK__info">
+		<span>№ </span>
+		<span>888 </span>
+		<span>люкс</span>
+		<span>9 990&#8381; </span>
+		<span>в сутки</span>
+	</div>
+	<div class="CardNumberBlocK__Comment">
+					<div class="star-rating">
+						<input type="radio" id="Otel_1-5-stars" name="rating_Otel_1" value="5" checked disabled />
+						<label for="Otel_1-5-stars" class="star"></label>
+						<input type="radio" id="Otel_1-4-stars" name="rating_Otel_1" value="4" disabled/>
+						<label for="Otel_1-4-stars" class="star"></label>
+						<input type="radio" id="Otel_1-3-stars" name="rating_Otel_1" value="3" disabled/>
+						<label for="Otel_1-3-stars" class="star"></label>
+						<input type="radio" id="Otel_1-2-stars" name="rating_Otel_1" value="2" disabled/>
+						<label for="Otel_1-2-stars" class="star"></label>
+						<input type="radio" id="Otel_1-1-star" name="rating_Otel_1" value="1" disabled/>
+						<label for="Otel_1-1-star" class="star"></label>
+					</div>
+		<div class="CardNumberBlocK__Reviews">
+			<span>145</span>
+			Отзывов
+		</div>
+	</div>
+</div>
+
+<div class="CardNumberBlocK">
+	<div class="CardNumberBlocK__img">
+		<img src="img/Otel__2.png" alt="Картинка отсутствует">
+		<div class="CardNumberBlocK__tab">
+			<span class="tab-active"></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<div class="CardNumberBlocK__info">
+		<span>№ </span>
+		<span>840 </span>
+		<span>люкс</span>
+		<span>9 990&#8381; </span>
+		<span>в сутки</span>
+	</div>
+	<div class="CardNumberBlocK__Comment">
+					<div class="star-rating">
+						<input type="radio" id="Otel_2-5-stars" name="rating_Otel_2" value="5" disabled/>
+						<label for="Otel_2-5-stars" class="star"></label>
+						<input type="radio" id="Otel_2-4-stars" name="rating_Otel_2" value="4" checked disabled/>
+						<label for="Otel_2-4-stars" class="star"></label>
+						<input type="radio" id="Otel_2-3-stars" name="rating_Otel_2" value="3" disabled/>
+						<label for="Otel_2-3-stars" class="star"></label>
+						<input type="radio" id="Otel_2-2-stars" name="rating_Otel_2" value="2" disabled/>
+						<label for="Otel_2-2-stars" class="star"></label>
+						<input type="radio" id="Otel_2-1-star" name="rating_Otel_2" value="1" disabled/>
+						<label for="Otel_2-1-star" class="star"></label>
+					</div>
+		<div class="CardNumberBlocK__Reviews">
+			<span>65</span>
+			Отзывов
+		</div>
+	</div>
+</div>
 
 	</body>
 </html>

@@ -1,28 +1,61 @@
-.button__apply {
-  background-color: #fff;
-  flex:1;
-  cursor: pointer;
-  border-radius: 4px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: #BC9CFF;
-
-}
-
-.button__apply:hover {
-  color: #4a4a4a;
-  background: #f0f0f0;
-}
-
-.guest{
-  i{
-    color: rgba(31, 32, 65, 0.5);
+.searchroomP {
+  &__flexbox {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__sidebar {
+    flex: 0 0 25%;
+  }
+  &__handpickedNumbers{
+    flex: 0 1 75%;
   }
 }
+.sidebarSR {
+  margin-top: 5px;
+  &__date {}
+  &__guest {
+    margin-top: 20px;
+  }
+  &__priserange {
+    margin-top: 30px;
+  }
+  &__PRComment {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(31, 32, 65, 0.5);
+  }
+  &__rulles {}
+  &__Availability {}
+  &__facilities {
+    margin-top: 30px;
+  }
+  &__additionalAmenities {}
+}
+
+.handpickedNumbers {
+  &__title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #1F2041;
+    margin-bottom: 21px;
+  }
+  &__flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__item {
+    margin-bottom: 20.5px;
+  }
+  &__pagelist {
+    display: flex;
+    justify-content: center;
+  }
+}
+

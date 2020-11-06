@@ -1,0 +1,254 @@
+.detailsRoom {
+	&__header {}
+	&__flexBox {
+		display: flex;
+		height: 485px;
+	}
+	&__item1 {
+		background-image: url(../img/Otel_1/otel_1__1.png);
+		flex:1 1 68%;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	&__item2 {
+		flex:1 1 32%;
+	}
+	&__imgUp {
+		background-image: url(../img/Otel_1/otel_1__2.png);
+		height: 243px;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	&__imgDown {
+		background-image: url(../img/Otel_1/otel_1__3.png);
+		height: 242px;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	&__bodyInfo {
+		margin-top: 70px;
+	}
+}
+.InfoNumber1 {
+	&__flexBox {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__FullInfoBox {
+	}
+	&__shortInfo {
+		display: flex;
+			}
+	&__intelligence {
+		flex: 0 0 50%;
+	}
+	&__header {
+		font-family: "Open sans";
+		font-style: normal;
+		font-weight: bold;
+		font-size: 19px;
+		line-height: 24px;
+		color: #1F2041;
+		margin-bottom: 21px;
+
+	}
+	&__impression {
+		flex: 0 1 311px;
+	}
+	&__ImpFlexBox {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+
+	}
+	&__ImpPieChart {}
+	&__ImpLegend {}
+	&__reviews {}
+	&__rules {
+		margin-top: 30px;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 70px;
+	}
+	&__rulesInf {}
+	&__Canceling {}
+	&__BookingBox {
+	}
+}
+.IntelligenceForm {
+	&__img {}
+	&__text {}
+	&__name {}
+	&__Comment {}
+}
+.ImpPieChart {
+	width: 120px;
+	height: 121px;
+	display: flex;
+	border-radius: 100%;
+	overflow: hidden;
+	position: relative;
+	&_up {
+		background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+		height: 50%;
+		margin: 0px 0px 2px 2px;
+	}
+	&__left {
+		flex: 0 0 50%;
+		background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
+	}
+	&__right {
+		flex: 0 0 50%;
+	}
+	&__down {
+		background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+		height: 50%;
+		margin: 2px 0px 0px 2px;
+	}
+	&__center{
+		position: absolute;
+		top: 5px;
+		left: 5px;
+		width: 92%;
+		height: 92%;
+		border-radius: 100%;
+		background: #ffffff;
+		display: flex;
+		justify-content: center;
+		align-items:center;
+		flex-direction: column;
+		span:first-child{
+			font-family: 'Open Sans';
+			font-style: normal;
+			font-weight: bold;
+			font-size: 24px;
+			color: #BC9CFF;
+		}
+		span{
+			font-family: Montserrat;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 12px;
+			line-height: 10px;
+			text-align: center;
+			text-transform: uppercase;
+			color: #BC9CFF;
+		}
+
+
+	}
+}
+.legendItem1 {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 24px;
+	color: rgba(31, 32, 65, 0.75);
+	&:before{
+		content: '';
+		display: inline-block;
+		margin-right: 5px;
+		width: 10px;
+		height: 10px;
+		border-radius: 100%;
+		background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
+	}
+}
+.legendItem2 {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 24px;
+	color: rgba(31, 32, 65, 0.75);
+	&:before{
+		content: '';
+		display: inline-block;
+		margin-right: 5px;
+		width: 10px;
+		height: 10px;
+		border-radius: 100%;
+		background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+	}
+}
+.legendItem3 {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 24px;
+	color: rgba(31, 32, 65, 0.75);
+	&:before{
+		content: '';
+		display: inline-block;
+		margin-right: 5px;
+		width: 10px;
+		height: 10px;
+		border-radius: 100%;
+		background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	}
+}
+.legendItem4 {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 24px;
+	color: rgba(31, 32, 65, 0.75);
+	&:before{
+		content: '';
+		display: inline-block;
+		margin-right: 5px;
+		width: 10px;
+		height: 10px;
+		border-radius: 100%;
+		background: linear-gradient(180deg, #919191 0%, #3D4975 100%);
+	}
+}
+.revies {
+	margin-top: 30px;
+	margin-right: 69px;
+	&__header {
+		display: flex;
+		justify-content:space-between;
+		span:first-child{
+			font-family: 'Open Sans';
+			font-style: normal;
+			font-weight: bold;
+			font-size: 19px;
+			line-height: 24px;
+			color: #1F2041;
+		}
+		span{
+			font-family: Montserrat;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 14px;
+			text-align: right;
+			color: rgba(31, 32, 65, 0.5);
+		}
+	}
+	&__feedback1 {
+		margin-top: 23px;
+	}
+	&__feedback2 {
+		margin-top: 23px;
+	}
+}
+.Canceling {
+	&__text {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 24px;
+		color: rgba(31, 32, 65, 0.75);
+		max-width: 341px;
+	}
+}
+
+.rulesInf{
+	margin-top: 0px;
+}

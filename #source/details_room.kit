@@ -13,15 +13,249 @@
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="fonts\font-awesome-4.7.0\css\font-awesome.min.css">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<script src="js/jquery.js"></script>
 	</head>
 	<!-- Отображаемое тело страницы -->
 	<body>
 		
 		<!--@import "header.html"-->
 		<!--Контент-->
-		
+		<div class="detailsRoom">
+			<div class="detailsRoom__header">
+				<div class="detailsRoom__flexBox">
+					<div class="detailsRoom__item1">
+					</div>
+					<div class="detailsRoom__item2">
+						<div class="detailsRoom__imgUp"></div>
+						<div class="detailsRoom__imgDown"></div>
+					</div>
+				</div>
+			</div>
+			<div class="detailsRoom__bodyInfo InfoNumber1">
+				<div class="wrapper">
+					<div class="InfoNumber1__flexBox">
+						<div class="InfoNumber1__FullInfoBox">
+							<div class="InfoNumber1__shortInfo">
+								<div class="InfoNumber1__intelligence">
+									<div class="InfoNumber1__header">Сведения о номере</div>
+									<div class="IntelligenceForm">
+										<div class="IntelligenceForm__img">
+											<span class="material-icons">insert_emoticon</span>
+										</div>
+										<div class="IntelligenceForm__text">
+											<div class="IntelligenceForm__name">Комфорт</div>
+											<div class="IntelligenceForm__Comment">Шумопоглощающие стены</div>
+										</div>
+									</div>
+
+									<div class="IntelligenceForm">
+										<div class="IntelligenceForm__img">
+											<span class="material-icons">location_city</span>
+										</div>
+										<div class="IntelligenceForm__text">
+											<div class="IntelligenceForm__name">Удобство</div>
+											<div class="IntelligenceForm__Comment">Окно в каждой из спален</div>
+										</div>
+									</div>
+
+									<div class="IntelligenceForm">
+										<div class="IntelligenceForm__img">
+											<span class="material-icons">whatshot</span>
+										</div>
+										<div class="IntelligenceForm__text">
+											<div class="IntelligenceForm__name">Уют</div>
+											<div class="IntelligenceForm__Comment">Номер оснащён камином</div>
+										</div>
+									</div>
+								</div>
+								<div class="InfoNumber1__impression">
+									<div class="InfoNumber1__header">Впечатления от номера</div>
+									<div class="InfoNumber1__ImpFlexBox">
+										<div class="InfoNumber1__ImpPieChart ImpPieChart">
+											<div class="ImpPieChart__left"></div>
+											<div class="ImpPieChart__right">
+												<div class="ImpPieChart_up"></div>
+												<div class="ImpPieChart__down"></div>
+											</div>
+											<div class="ImpPieChart__center"><span>260</span> <br> <span>голосов</span></div>
+										</div>
+										<div class="InfoNumber1__ImpLegend">
+											<ul>
+												<li class="legendItem1">Великолепно</li>
+												<li class="legendItem2">Хорошо</li>
+												<li class="legendItem3">Удовлетворительно</li>
+												<li class="legendItem4">Разочарован</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="InfoNumber1__reviews revies">
+								<div class="revies__header"><span>Отзывы посетителей номра</span><span>2 отзыва</span></div>
+								<div class="revies__feedback1">
+									<div class="CommentForm">
+										<div class="CommentForm__title">
+											<div class="CommentForm__photo"><img src="img/image.png" alt="Фото"></div>
+											<div class="CommentForm__nameinfo">
+												<div class="CommentForm__name">Мурад Сарафанов</div>
+												<div class="CommentForm__ago">5 дней назад</div>
+											</div>
+										</div>
+										<div class="CommentForm__bottom">
+											<div class="CommentForm__like">
+												<button class="likeButton" id="likeComment">
+													<span class="material-icons likeButton__icon" id="iconComment">favorite_border</span>
+													<span class="numberLike" id="numberlikeComment">2</span>
+												</button>
+											</div>
+											<div class="CommentForm__text">
+												Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="revies__feedback2">
+									<div class="CommentForm">
+										<div class="CommentForm__title">
+											<div class="CommentForm__photo"><img src="img/guest_2.png" alt="Фото"></div>
+											<div class="CommentForm__nameinfo">
+												<div class="CommentForm__name">Патрисия Стёклышкова</div>
+												<div class="CommentForm__ago">неделю назад</div>
+											</div>
+										</div>
+										<div class="CommentForm__bottom">
+											<div class="CommentForm__like">
+												<button class="likeButton" id="likeComment2">
+													<span class="material-icons likeButton__icon" id="iconComment2">favorite_border</span>
+													<span class="numberLike" id="numberlikeComment2">2</span>
+												</button>
+											</div>
+											<div class="CommentForm__text">
+												Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент
+											</div>
+										</div>
+									</div>
+									<script src="js/likebutton.js"></script>
+								</div>
+							</div>
+							<div class="InfoNumber1__rules">
+								<div class="InfoNumber1__rulesInf">
+										<div class=" standForm rulesInf">
+												<div class="InfoNumber1__header">Правила</div>
+												<div class="standForm__boxBullet">
+													<ul class="bulletList">
+														<li class="bulletItem">Нельзя с питомцами</li>
+														<li class="bulletItem">Без вечеринок и мероприятий</li>
+														<li class="bulletItem">Время прибытия — после 13:00, а выезд до 12:00</li>
+													</ul>
+												</div>
+										</div>
+								</div>
+								<div class="InfoNumber1__Canceling Canceling">
+										<div class="InfoNumber1__header">Отмена</div>
+										<div class="Canceling__text">
+											Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+										</div>
+								</div>
+							</div>
+						</div>
+						<div class="InfoNumber1__BookingBox">
+							<div class="CardNumberBlock">
+								<div class="CardNumberBlock__title">
+									<span>№ </span>
+									<span>888 </span>
+									<span>люкс</span>
+									<span>9 990&#8381; </span>
+									<span>в сутки</span>
+								</div>
+								<div class="CardNumberBlock__dateForm">
+									<div class="serchroom__dateflexbox">
+													<div class="serchroom__dateflexitem">
+														Прибытие <br>
+														<input placeholder="ДД.ММ.ГГГГ" class="date-pickerinp date-picker-start" />
+														<i class="fa fa-chevron-down" aria-hidden="true"></i>
+													</div>
+													<div class="serchroom__dateflexitem">
+														Выезд <br>
+														<input placeholder="ДД.ММ.ГГГГ" class="date-pickerinp date-picker-end" />
+														<i class="fa fa-chevron-down" aria-hidden="true"></i>
+													</div>
+													<div class="date-picker">
+													</div>
+													<script src="js/datepicker.js"></script>
+												</div>
+								</div>
+								<div class="CardNumberBlock__guest">
+									<div class="Popap standForm">
+										<div class="standForm__heading"><span>Гости</span> <span></span></div>
+										<div class="standForm__Popap">
+											<div class="manyGuests PopapForm__inputForm">
+												Сколько гостей 
+											</div>
+											<i class="fa fa-chevron-down" aria-hidden="true"></i>
+											<div class="manyGuests__popapBox PopapForm__popapBox">
+												<div class="manyGuests__popapGuest PopapForm__popapGuest">
+													<span class="manyGuests__name PopapForm__name">Взрослые</span>
+													<div>
+														<button class="manyGuests__Adults_minus PopapForm_mathSign">-</button>
+														<span class="manyGuests__Adults_result PopapForm_quantity">0</span>
+														<button class="manyGuests__Adults_plus PopapForm_mathSign">+</button>
+													</div>
+												</div>
+												<div class="manyGuests__popapGuest PopapForm__popapGuest">
+													<span class="manyGuests__name PopapForm__name">Дети</span>
+													<div>
+														<button class="manyGuests__Children_minus PopapForm_mathSign">-</button>
+														<span class="manyGuests__Children_result PopapForm_quantity">0</span>
+														<button class="manyGuests__Children_plus PopapForm_mathSign">+</button>
+													</div>
+												</div><div class="manyGuests__popapGuest PopapForm__popapGuest">
+													<span class="manyGuests__name PopapForm__name">Младенцы</span>
+													<div>
+														<button class="manyGuests__Babies_minus PopapForm_mathSign">-</button>
+														<span class="manyGuests__Babies_result PopapForm_quantity">0</span>
+														<button class="manyGuests__Babies_plus PopapForm_mathSign">+</button>
+													</div>
+												</div>
+												<div class="PopapForm__footer">
+													<button class="manyGuests__ButtonClear PopapForm__batton PopapForm__batton_clear">Очистить</button>
+													<button class="manyGuests__ButtonAcept PopapForm__batton">Принять</button>
+												</div>
+											</div>
+										</div>
+										<script src="js/popap_F.js"></script>
+									</div>
+								</div>
+								<div class="CardNumberBlock__infoPrice">
+									<div>9 990₽ х 4 суток</div>
+									<div>39 960₽</div>
+								</div>
+								<div class="CardNumberBlock__infoServices">
+									<div>Сбор за услуги: скидка 2 179₽</div>
+									<div>0₽</div>
+								</div>
+								<div class="CardNumberBlock__infoPriceAdditional">
+									<div>Сбор за дополнительные услуги</div>
+									<div>300₽</div>
+								</div>
+								<div class="CardNumberBlock__total">
+									<div>Итого</div>
+									<div></div>
+									<div>38 081₽</div>
+								</div>
+								<div class="CardNumberBlock__toBook">
+									<div class="ButtinForm__button">
+												<button class="Checkout">Забронировать<span class="material-icons button__arrow">arrow_forward</span></button>
+											</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 
 		<!--@import "footer.html"-->
 	</body>
-</html>@import 'scss/footer.scss';
+</html>
