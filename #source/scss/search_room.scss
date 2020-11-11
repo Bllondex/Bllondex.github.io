@@ -7,7 +7,8 @@
     flex: 0 0 25%;
   }
   &__handpickedNumbers{
-    flex: 0 1 75%;
+    flex: 0 1 70%;
+    margin-left: 20px;
   }
 }
 .sidebarSR {
@@ -59,3 +60,36 @@
   }
 }
 
+@media (max-width: 1110px) {
+  .wrapper_search-room{
+    padding: 0px 60px;
+  }
+}
+
+@media (max-width: 992px) {
+  .wrapper_search-room{
+    padding: 0px 10px;
+  }
+  
+}
+@media (max-width: 850px) {
+  .handpickedNumbers__flexbox{
+    justify-content: left;
+  }
+  .wrapper_search-room{
+    padding: 0px 90px;
+  }
+}
+@media (max-width: 767px) {
+  .wrapper_search-room{
+    padding: 0px 10%;
+  }
+  .searchroomP__flexbox{
+    display: block;
+    justify-content: center;
+    align-items: center;
+  } 
+  .searchroomP__handpickedNumbers{
+    margin-left: 0;
+  }
+}

@@ -1073,7 +1073,7 @@ input[class='switch']:checked + .checkboxSwitch_label:after{
 }
 
 .SearchNimberBlock {
-	width: 380px;
+	max-width: 380px;
 	height: 374px;
 	background: #FFFFFF;
 	border: 1px solid rgba(0, 0, 0, 0.12);
@@ -1098,6 +1098,16 @@ input[class='switch']:checked + .checkboxSwitch_label:after{
 	}
 	&__buttonSearch{
 		margin-top: 31px;
+	}
+}
+@media (max-width: 767px) {
+	.SearchNimberBlock {
+		padding: 10px 0px 0px 0px;
+		height:360px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
 	}
 }
 

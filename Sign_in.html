@@ -5,7 +5,7 @@
 	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
 	<head>
 		<!-- Заголовок страницы в браузере -->
-		<title>Проект №1</title>
+		<title>Toxin - Вход</title>
 		<!-- Подключаем CSS -->
 		<link rel="stylesheet" href="css/style.css" />
 		<!-- Кодировка страницы -->
@@ -13,15 +13,18 @@
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="fonts\font-awesome-4.7.0\css\font-awesome.min.css">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<script src="js/jquery.js"></script>
+		<meta name="viewport" content="width=device-width">
 	</head>
 	<!-- Отображаемое тело страницы -->
 	<body>
-		
+		<div class="wrapper_registr">
 <div class="header">
-	<div class="wrapper">
+	<div class="wrapper wrapper__header">
 		<div class="header__flexbox">
 			<div class="header__logo"><a href="index.html"><img src="img/Logo.png" alt=""></a></div>
 			<div class="header__menu">
+				<div class="header__burger"><span class="material-icons">menu</span></div>
 				<div class="header__menubox">
 					<div class="header__menuItem"><a href="#" class="menu__batton">О нас</a></div>
 					<div class="header__menuItem"><a href="#" class="menu__batton">Услуги</a></div>
@@ -34,10 +37,12 @@
 			</div>
 		</div>
 	</div>
+	<script src="js/menuBurger.js"></script>
 </div>
+		</div>
 		<!--Контент-->
 		<div class="registrationPage">
-			<div class="wrapper">
+			<div class="wrapper wrapper_registr">
 				<div class="registrationPage_Panel">
 					<div class="comeinForm">
 						<div class="comeinForm__title">Войти</div>
@@ -69,7 +74,7 @@
 
 
 <div class="footer">
-	<div class="wrapper">
+	<div class="wrapper ">
 		<div class="footer__flexbox">
 			<div class="footer__logo">
 				<div class="footer__logoicon"><img src="img/Logo.png" alt="Лого в разработке"></div>
@@ -120,7 +125,7 @@
 		</div>
 	</div>
 	<div class="footer__endblock">
-		<div class="wrapper">
+		<div class="wrapper wrapper_index">
 			<div class="footer__flexbox">
 			<div class="footer__rights">Copyright © 2018 Toxin отель. Все права зачищены.</div>
 			<div class="footer__icon">

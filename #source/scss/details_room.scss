@@ -9,6 +9,7 @@
 		flex:1 1 68%;
 		background-repeat: no-repeat;
 		background-size: cover;
+		background-position: center;
 	}
 	&__item2 {
 		flex:1 1 32%;
@@ -251,4 +252,51 @@
 
 .rulesInf{
 	margin-top: 0px;
+}
+
+@media (max-width: 1200px) {
+	.wrapper_details{
+		padding: 0px 20px;
+	}
+}
+@media (max-width: 992px) {
+	.InfoNumber1__flexBox{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	} 
+}
+
+@media (max-width: 767px) {
+	.InfoNumber1__shortInfo{
+		display: block;
+	}
+	.InfoNumber1__rules{
+		display: block;
+	}
+	.revies{
+		margin-right: 0;
+	}
+	.CardNumberBlock{
+		padding: 0px 0px;
+		width: auto;
+	}
+	.detailsRoom__item2 {
+		display: none;
+	}
+	.revies__header{
+		display: block;
+		span{
+			display: block;
+			text-align: left;
+		}
+	}
+	.InfoNumber1__FullInfoBox {
+		padding: 0px 0px 0px 20px;
+		margin-left: -21px;
+	}
+	.CardNumberBlock{
+		padding: 0px 10px;
+	}
+
 }

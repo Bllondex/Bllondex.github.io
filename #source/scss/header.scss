@@ -10,11 +10,18 @@
 	&__logo {}
 	&__menu {
 		margin: auto 0;
+		position: relative;
 	}
 	&__menubox {
 		display: flex;
 	}
 	&__menuItem {
+	}
+	&__burger{
+		display: none;
+		span{
+		font-size: 50px;
+		}
 	}
 }
 .wrapper {
@@ -57,3 +64,50 @@
 		color: #BC9CFF;
 	}
 }
+
+@media (max-width: 1150px) {
+	.header__menubox{
+		display:block;
+		position: absolute;
+		top:-1000px;
+		left: -190px;
+		z-index: 3;
+		background-color: #FFFFFF;
+		height: 410px;
+		padding: 0px 20px;
+		border-radius: 0 0 10% 10%;
+		text-align: center;
+		transition: all 0.5s ease 0s;
+	}
+	.header__menubox.active{
+		top:55px;
+	}
+	.header__menuItem{
+		padding: 20px 0px;
+		border-top: black solid 1px;
+	}
+	.header__burger{
+		display: block;
+	}
+	.header{
+		position: relative;
+		z-index: 5;
+	}
+	.wrapper__header{
+		padding: 10px 0px 0px 0px;
+	}
+}
+// @media (max-width: 992px) {
+// 	.wrapper__header{
+// 		padding: 10px 50px 0px 50px;
+// 	}
+// }
+// @media (max-width: 767px) {
+// 	.header__menubox{
+// 		left: -550%;
+// 		width: 325px;
+// 	}
+// 	.wrapper__header{
+// 		padding: 10px 0px 0px 10px;
+// 	}
+// }

@@ -1,0 +1,48 @@
+
+@media (max-width: 374px) {
+// 	.wrapper_registr{
+// 		padding: 20px 0px;
+// 	}
+// 	.comeinForm{
+// 		width: auto;
+// 		padding: 0;
+// 	}
+// 	.accountRegistrationBlock{
+// 		width: auto;
+// 		padding: 0;
+// 	}
+}
+@media (max-width: 1200px) {
+	.wrapper_registr{
+		padding: 20px 20px;
+	}
+}
+@media (max-width: 767px) {
+	.wrapper_registr{
+		padding: 20px 17px;
+	}
+	.comeinForm{
+		padding: 0px;
+		width: auto;
+		border: none;
+		box-shadow: none;
+		display: flex;
+    	flex-direction: column;
+    	justify-content: center;
+    	align-items: center;
+	}
+	.registrationPage{
+		background: none;
+	}
+	.standForm__Form{
+		input{
+			width: auto;
+		}
+	}
+	.accountRegistrationBlock{
+		padding: 0px;
+		width: auto;
+		border: none;
+		box-shadow: none;
+	}
+}

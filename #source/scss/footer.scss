@@ -147,3 +147,40 @@
 	margin-top: 100px;
 }
 
+@media (max-width: 1300px) {
+	.footer__navigation{
+		display: none;
+	}
+	.footer__about{
+		display: none;
+	}
+	.footer__support{
+		display: none;
+	}
+	.footer__subscription{
+		display: none;
+	}
+	.footer__logoText{
+		display: none;
+	}
+	.footer__flexbox{
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+	}
+	.footer__logo{
+		flex: 0 0 10px;
+		height: 30px;
+	}
+	.footer__endblock{
+		margin: 0;
+	}
+	.footer__icon{
+		margin-top: 20px;
+	}
+	.footer__endblock{
+		margin-bottom: 100px;
+		text-align: center;
+	}
+
+	}
